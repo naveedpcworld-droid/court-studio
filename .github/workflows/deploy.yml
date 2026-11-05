@@ -17,6 +17,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: vars.PUBLISH_SITE == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

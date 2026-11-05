@@ -17,6 +17,9 @@ concurrency:
 
 jobs:
   update:
+    # OPT-IN: runs only in a copy whose owner set repo variable AUTO_UPDATE=true
+    # (Settings > Secrets and variables > Actions > Variables). Never runs on the original repo.
+    if: vars.AUTO_UPDATE == 'true'
     runs-on: ${{ vars.RUNNER_LABEL || 'ubuntu-latest' }}
     defaults:
       run:
@@ -75,6 +78,7 @@ jobs:
 
   deploy:
     needs: update
+    if: vars.AUTO_UPDATE == 'true' && vars.PUBLISH_SITE == 'true'
     runs-on: ubuntu-latest
     permissions:
       pages: write

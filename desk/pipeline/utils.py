@@ -44,7 +44,7 @@ def read_json(path: str, default: Any = None) -> Any:
         return default
 
 
-def http_get(url: str, timeout: int = 30, retries: int = 2) -> str:
+def http_get(url: str, timeout: int = 30, retries: int = 4) -> str:
     last = None
     for attempt in range(retries + 1):
         try:
@@ -54,7 +54,7 @@ def http_get(url: str, timeout: int = 30, retries: int = 2) -> str:
         except (urllib.error.URLError, TimeoutError, OSError) as exc:
             last = exc
             if attempt < retries:
-                time.sleep(1.5 * (attempt + 1))
+                time.sleep(2.5 * (attempt + 1))
     raise RuntimeError(f"GET failed: {url}: {last}")
 
 

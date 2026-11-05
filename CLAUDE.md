@@ -5,11 +5,15 @@ Is repo mein 4 cheezein hain. Student ko commands chalane ko **mat** kaho — tu
 | Folder | Kya hai |
 |---|---|
 | `library/` | **10,981 public court recordings** (36 judge/court channels) ki searchable transcripts + har video ka topic, judge aur "opportunity score" |
-| `desk/` | daily auto-updater (GitHub Actions har 6 ghante naye uploads ki transcripts `desk/data/` mein daalta hai). Student `git pull` kare to naye videos bhi search mein |
+| `desk/` | naye uploads laane ka system (optional). Snapshot ke baad ke videos `desk/data/` mein |
 | `niche/` | niche ki poori breakdown: competitors kya karte hain, kya chalta hai, judges ke original sources, titles/thumbnails |
 | `studio/` | video banane ka system: 14 layout templates (T01–T14) + 5 research/B-roll templates (B01–B05), voice, captions, render |
 
-Pehli dafa: `git pull` karo, phir `studio/docs/SETUP.md` ke checks.
+Pehli dafa: `studio/docs/SETUP.md` ke checks.
+
+**Updates (optional, student ki marzi):** repo khud update nahi hota. Student kahe "library update karo" /
+"naye videos laao" → `python3 tools/update.py` chalao (5-15 min, uske apne computer pe). Automatic chahiye
+to `UPDATES.md` ke steps (uski apni GitHub copy + `AUTO_UPDATE=true`). Khud se update mat chalao bina pooche.
 
 ## 1. "Judge ki video chahiye" / "X topic pe case do" / "kya banaun?"
 ```bash
