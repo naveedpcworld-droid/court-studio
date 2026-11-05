@@ -1,0 +1,43 @@
+{
+ "name": "Evidence Board",
+ "best_for": "Detective look: polaroid photos pinned on cork, typewriter documents, sticky-note titles. Crime / backstory heavy cases.",
+ "layout": "spotlight",
+ "accent": "#F5F0E1",
+ "name_tags": true,
+ "tag_size": 26,
+ "broll": true,
+ "text_font": "Courier New",
+ "skin": {
+  "bg": "bg.jpg",
+  "bg_blur": 2,
+  "bg_dim": 0.85,
+  "doc": "typewriter",
+  "doc_tilt": 3,
+  "photo": "polaroid",
+  "accent": "#FFE97A",
+  "highlight": "#FFE14D",
+  "title_fg": "#1A1A1A",
+  "card_bg": "#1E1A16",
+  "font": "Courier New",
+  "font_bold": "Courier New Bold",
+  "quote_font": "Courier New Bold"
+ },
+ "caption": {
+  "style": "karaoke",
+  "position": "below",
+  "font": "Courier New Bold",
+  "size": 58,
+  "color": "#FFFFFF",
+  "highlight": "#FFE97A",
+  "outline": "#000000",
+  "outline_w": 4,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14,
+  "off": false
+ },
+ "bg": "bg.jpg"
+}

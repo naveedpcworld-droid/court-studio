@@ -1,0 +1,26 @@
+{
+ "name": "TV News Desk",
+ "best_for": "1 ya 2 cameras; right side CASE FILE panel (case, court, charge, judge) + neeche title ticker.",
+ "layout": "news",
+ "accent": "#E8B21E",
+ "name_tags": true,
+ "tag_size": 28,
+ "ticker_tag": "COURT",
+ "caption": {
+  "style": "box",
+  "position": "on",
+  "font": "Arial Black",
+  "size": 44,
+  "color": "#FFFFFF",
+  "highlight": "#E8B21E",
+  "outline": "#000000",
+  "outline_w": 4,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#0B1426",
+  "box_pad": 12
+ },
+ "bg": "bg.jpg"
+}

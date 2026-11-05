@@ -1,0 +1,30 @@
+{
+ "name": "American Flag Boxes",
+ "best_for": "2 cameras; CourtLines jaisa, alag alag boxed cams + shadow.",
+ "layout": "strip",
+ "frame": {
+  "style": "box",
+  "color": "#FFFFFF",
+  "thickness": 6
+ },
+ "cam_w": 860,
+ "gap": 40,
+ "shadow": true,
+ "caption": {
+  "style": "karaoke",
+  "position": "below",
+  "font": "Impact",
+  "size": 76,
+  "color": "#FFFFFF",
+  "highlight": "#FF2D2D",
+  "outline": "#000000",
+  "outline_w": 5,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}

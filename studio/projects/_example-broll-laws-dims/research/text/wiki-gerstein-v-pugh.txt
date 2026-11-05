@@ -1,0 +1,38 @@
+https://en.wikipedia.org/wiki/Gerstein_v._Pugh
+Gerstein v. Pugh
+
+Gerstein v. Pugh, 420 U.S. 103 (1975), was a United States Supreme Court case in which the Court held that it is a violation of the Fourth Amendment to detain an individual for an extended period of time without a probable cause hearing by a neutral magistrate.
+
+
+== Background ==
+In 1971, Robert Pugh and Nathaniel Henderson were detained in Florida without a warrant on multiple charges due to a prosecutor's information.
+In Florida indictments were, at that time, required only for a narrow subset of charges. All other crimes could be charged by a prosecutor without a preliminary hearing. Additionally, Florida jurisprudence only allowed a judicial determination of probable cause to be requested after 30 days and arraignment, which could often be delayed for a month or more. As a result, a person charged by information could be detained for a substantial period solely on the decision of a prosecutor.
+Pugh and Henderson filed a lawsuit in District Court claiming a constitutional right to a hearing on the issue of probable cause and requesting relief. The District Court held that the Fourth and Fourteenth Amendments give all arrested persons charged by information a right to a judicial hearing on the question of probable cause.
+The District Court's final order prescribed a detailed post-arrest procedure. Upon arrest, the accused would be taken before a magistrate for a "first appearance hearing." The magistrate would explain the charges, advise the accused of their rights, appoint counsel if necessary, and proceed with an adversarial probable cause determination hearing within a specified period of time no longer than 10 days. At the hearing, the accused would be allowed to call and cross-examine witnesses. If the magistrate found no probable cause, the accused would be discharged. They then could not be charged with the same offense except by indictment.
+After the ruling the Florida Supreme Court amended the procedural rules governing preliminary hearings state-wide. Under the amended rules, every arrested person must be taken before a judicial officer within 24 hours. However, there is one crucial difference between these hearings and the one ordered by the Court: the magistrate does not make a determination of probable cause. Changes were also made to the procedure for preliminary hearings, restricting them to felony charges and establishing that no hearings are available to those charged by information or indictment.
+In a supplemental opinion, the District Court held that the amended rules remained inconsistent with the Constitution because a defendant charged by information still could be detained pending trial without a judicial determination of probable cause.
+The Court of Appeals affirmed on appeal. It also suggested that the form of preliminary hearing provided by the amended Florida rules would be acceptable as long as it was provided to all defendants in custody pending trial.
+
+
+== Holding ==
+The Court unanimously ruled that the Fourth Amendment requires a "determination of probable cause as a prerequisite to extended restraint of liberty following arrest." However, the Court clarified that a conviction may not be vacated on grounds of a lack of a determination of probable cause.
+
+... while the State's reasons for taking summary action subside, the suspect's need for a neutral determination of probable cause increases significantly. The consequences of prolonged detention may be more serious than the interference occasioned by arrest. Pretrial confinement may imperil the suspect's job, interrupt his source of income, and impair his family relationships. ... When the stakes are this high, the detached judgment of a neutral magistrate is essential if the Fourth Amendment is to furnish meaningful protection from unfounded interference with liberty. Accordingly, we hold that the Fourth Amendment requires a judicial determination of probable cause as a prerequisite to extended restraint of liberty following arrest.
+Additionally, a majority of the Court held that the adversarial format of the hearing prescribed by the District Court – in which the accused was entitled to counsel and witnesses may be called and cross-examined – was unnecessary to the determination of probable cause and not required by the Constitution.
+
+Both the District Court and the Court of Appeals held that the determination of probable cause must be accompanied by the full panoply of adversary safeguards -- counsel, confrontation, cross-examination, and compulsory process for witnesses. These adversary safeguards are not essential for the probable cause determination required by the Fourth Amendment. The sole issue is whether there is probable cause for detaining the arrested person pending further proceedings. This issue can be determined reliably without an adversary hearing.
+The Court also ruled that a probable cause hearing is not a "critical stage" to a Florida trial that would impair defense if the accused was required to proceed without counsel. Accordingly, the precedent established in Coleman v. Alabama was not applicable in this situation due to the decreased significance of the probable cause hearing in Florida as compared to Alabama.
+
+Because of its limited function and its nonadversary character, the probable cause determination is not a "critical stage" in the prosecution that would require appointed counsel. The Court has identified as "critical stages" those pretrial procedures that would impair defense on the merits if the accused is required to proceed without counsel. ... In Coleman v. Alabama, where the Court held that a preliminary hearing was a critical stage of an Alabama prosecution, ... The Court noted that the suspect's defense on the merits could be compromised if he had no legal assistance for exploring or preserving the witnesses' testimony. This consideration does not apply when the prosecution is not required to produce witnesses for cross-examination.
+
+
+=== Concurrence ===
+In Stewart's concurring opinion, the Justice criticized the Majority's decision to specify that an adversarial hearing was unnecessary, particularly given the Court had previously required them in lesser disputes.
+
+I see no need in this case for the Court to say that the Constitution extends less procedural protection to an imprisoned human being than s [sic] required to test the propriety of garnishing a commercial bank account, North Georgia Finishing, Inc. v. Di-Chem, Inc., 419 U.S. 601; the custody of a refrigerator, Mitchell v. W.T. Grant Co., 416 U.S. 600; the temporary suspension of a public school student, Goss v. Lopez, 419 U. S. 565; or the suspension of a driver's license, Bell v. Burson, 402 U.S. 535.
+Instead, Stewart would have considered whether a State's method of determining probable cause was constitutional in future cases, through an evaluation of the sum of its procedure.
+
+
+== References ==
+
+ This article incorporates public domain material from Gerstein v. Pugh, 420 U.S. 103 (1975) (PDF). United States Reports.

@@ -1,0 +1,35 @@
+{
+ "name": "Noir Breakdown (B&W commentary)",
+ "best_for": "kisi bhi source; commentary ke waqt footage BLACK & WHITE + BREAKDOWN tag.",
+ "layout": "strip",
+ "frame": {
+  "style": "lines",
+  "color": "#E50914",
+  "thickness": 6
+ },
+ "divider": {
+  "color": "#E50914"
+ },
+ "cam_w": 900,
+ "gap": 6,
+ "vo_style": "bw",
+ "vo_tag": "BREAKDOWN",
+ "tag_color": "#FF3B3B",
+ "caption": {
+  "style": "box",
+  "position": "below",
+  "font": "Arial Black",
+  "size": 50,
+  "color": "#FFFFFF",
+  "highlight": "#FF3B3B",
+  "outline": "#000000",
+  "outline_w": 4,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 16
+ },
+ "bg": "bg.jpg"
+}

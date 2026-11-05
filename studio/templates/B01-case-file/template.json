@@ -1,0 +1,53 @@
+{
+ "name": "Case File Explainer",
+ "best_for": "Research-heavy legal explainer (Audit the Court jaisa, apna look): real documents + marker highlights, charge card, timeline. Kisi bhi source par.",
+ "layout": "strip",
+ "frame": {
+  "style": "outer",
+  "color": "#F2E6C9",
+  "thickness": 5
+ },
+ "divider": {
+  "color": "#F2E6C9"
+ },
+ "cam_w": 880,
+ "gap": 6,
+ "broll": true,
+ "speaker_follow": true,
+ "vo_style": "bw",
+ "cold_tag": "CASE FILE",
+ "tag_color": "#E8B21E",
+ "skin": {
+  "bg": "bg.jpg",
+  "bg_blur": 10,
+  "bg_dim": 0.85,
+  "doc": "paper",
+  "doc_tilt": -2.5,
+  "photo": "clean",
+  "accent": "#E8B21E",
+  "highlight": "#FFE14D",
+  "charge_bar": "#8B1A1A",
+  "title_fg": "#111111",
+  "card_bg": "#14110D",
+  "font": "Arial",
+  "font_bold": "Arial Black"
+ },
+ "caption": {
+  "style": "karaoke",
+  "position": "on",
+  "font": "Arial Black",
+  "size": 48,
+  "color": "#FFFFFF",
+  "highlight": "#FFE14D",
+  "outline": "#000000",
+  "outline_w": 4,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14,
+  "off": true
+ },
+ "bg": "bg.jpg"
+}

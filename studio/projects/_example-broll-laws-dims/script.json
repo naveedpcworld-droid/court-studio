@@ -1,0 +1,257 @@
+{
+ "title": "Defense Attorney Finds ONE Missing Sentence... Judge Fleischer Throws Out the DWI",
+ "voice": "en-US-BrianMultilingualNeural",
+ "info": {
+  "case_title": "State of Texas v. Byron Laws",
+  "court": "Harris County Criminal Court at Law No. 5, Houston",
+  "charge": "DWI, BAC 0.15 or more (Class A)",
+  "judge": "Judge David Fleischer"
+ },
+ "labels_default": [
+  "COURTROOM",
+  "JUDGE FLEISCHER"
+ ],
+ "cold_open": [
+  476.0,
+  489.7
+ ],
+ "hearing": [
+  0.5,
+  637.0
+ ],
+ "auto_trim": 2.0,
+ "focus": [
+  [
+   107.0,
+   125.0,
+   0
+  ],
+  [
+   140.2,
+   172.0,
+   1
+  ],
+  [
+   457.3,
+   503.1,
+   1
+  ],
+  [
+   531.5,
+   541.6,
+   1
+  ],
+  [
+   585.1,
+   603.4,
+   1
+  ]
+ ],
+ "notes": [
+  [
+   0.5,
+   "A defense lawyer can ask the judge to check probable cause (PC): was there a sworn, legal reason to arrest and charge?"
+  ],
+  [
+   107.0,
+   "In Harris County the sworn PC statement is the DIMS summary the officer types in."
+  ],
+  [
+   140.2,
+   "Judge: is there any rule that PC can only come from the DIMS? Defense: the DIMS is the sworn part."
+  ],
+  [
+   263.7,
+   "Lomas v. Harris County: officers now swear to the facts they enter in DIMS."
+  ],
+  [
+   457.3,
+   "Ruling: NO probable cause in this case."
+  ],
+  [
+   585.1,
+   "The State can still try a grand jury indictment."
+  ]
+ ],
+ "vo": [
+  {
+   "id": "hook",
+   "broll": 457.0,
+   "text": "This man was charged with driving while intoxicated in Houston, with a blood alcohol level of point one five or more. His case sat for years. Then a newly appointed defense attorney read the one sworn document the whole case was built on, and noticed it never said why the police stopped him. What Judge Fleischer did with that is a lesson in how the Fourth Amendment actually works. Let's get into it.",
+   "beats": [
+    {
+     "type": "frame",
+     "t": 465.0,
+     "tile": 0,
+     "caption": "Byron Laws, before Judge Fleischer"
+    },
+    {
+     "type": "charge",
+     "offense": "Driving while intoxicated, alcohol concentration 0.15 or more",
+     "law": "Texas Penal Code 49.04(d)",
+     "penalty": "Class A misdemeanor",
+     "at": "blood alcohol"
+    },
+    {
+     "type": "photo",
+     "image": "img/harris-county-criminal-justice-center-houston-1.jpg",
+     "caption": "Harris County Criminal Justice Center",
+     "at": "His case sat"
+    },
+    {
+     "type": "court",
+     "t": 125.0,
+     "at": "noticed it never"
+    }
+   ]
+  },
+  {
+   "id": "p1",
+   "at": 52.5,
+   "text": "Here's the law behind this request. In Gerstein versus Pugh, the Supreme Court ruled unanimously that the Fourth Amendment requires a determination of probable cause as a prerequisite to extended restraint of liberty following arrest. Texas builds that into Article fourteen point zero six of its Code of Criminal Procedure. After an arrest without a warrant, the person must be taken before a magistrate without unnecessary delay, and no later than forty eight hours. So probable cause isn't a formality. It's the reason the State is allowed to hold you at all.",
+   "beats": [
+    {
+     "type": "title",
+     "text": "The Law",
+     "sub": "Why probable cause matters"
+    },
+    {
+     "type": "doc",
+     "subtitle": "Supreme Court of the United States",
+     "title": "Gerstein v. Pugh, 420 U.S. 103 (1975)",
+     "text": "The Court unanimously ruled that the Fourth Amendment requires a \"determination of probable cause as a prerequisite to extended restraint of liberty following arrest.\"",
+     "highlight": [
+      "determination of probable cause as a prerequisite to extended restraint of liberty"
+     ],
+     "source": "Source: Wikipedia \u2014 Gerstein v. Pugh",
+     "at": "In Gerstein"
+    },
+    {
+     "type": "doc",
+     "subtitle": "Texas Code of Criminal Procedure",
+     "title": "Art. 14.06 \u2014 Must Take Offender Before Magistrate",
+     "text": "In each case enumerated in this Code, the person making the arrest or the person having custody of the person arrested shall take the person arrested or have him taken without unnecessary delay, but not later than 48 hours after the person is arrested, before the magistrate...",
+     "highlight": [
+      "without unnecessary delay, but not later than 48 hours"
+     ],
+     "source": "Source: codes.findlaw.com",
+     "at": "Texas builds"
+    },
+    {
+     "type": "court",
+     "t": 52.0,
+     "at": "So probable cause"
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "at": 217.0,
+   "text": "So what is the DIMS? It's the District Attorney intake system officers use in Harris County to file charges after an arrest, and the summary of facts the officer types into it is the sworn part. An offense report is the full police narrative, but nobody swears to it. The defense says the judge can only look at the sworn facts. And those sworn facts say the officers stopped the car, without saying why.",
+   "beats": [
+    {
+     "type": "broll",
+     "file": "broll/police-officer-writing-report.mp4",
+     "at": "So what is"
+    },
+    {
+     "type": "checklist",
+     "title": "What the sworn DIMS shows",
+     "items": [
+      [
+       "Officers stopped the car",
+       true
+      ],
+      [
+       "A reason for the stop",
+       false
+      ],
+      [
+       "Sworn by the officer",
+       true
+      ]
+     ],
+     "at": "An offense report"
+    },
+    {
+     "type": "court",
+     "t": 216.0,
+     "at": "And those sworn"
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "at": 431.4,
+   "text": "The lawsuit they're talking about is Lomas versus Harris County, case number four sixteen C V three seven four five in federal court in Houston. It ended in a final consent judgment. Under it, the District Attorney agreed that an officer now swears to the facts being entered into the DIMS, so that sworn facts are what judges use to decide probable cause. Harris County did not admit liability, and agreed to pay seventy five thousand dollars in attorneys' fees. That agreement is exactly what Judge Fleischer is about to hold the State to.",
+   "beats": [
+    {
+     "type": "title",
+     "text": "The Lawsuit",
+     "sub": "Lomas v. Harris County"
+    },
+    {
+     "type": "doc",
+     "subtitle": "U.S. District Court, Southern District of Texas \u2014 Case 4:16-cv-03745",
+     "title": "Lomas v. Harris County \u2014 Final Consent Judgment",
+     "text": "The District Attorney, in her official capacity, has agreed to change (and has already changed) the process of presenting probable cause statements for warrantless arrests, whereby an officer now swears to the facts being inputted into the District Attorney Intake System (\"DIMS\") and, as a result, sworn facts are now presented to judicial officers for determination of probable cause.",
+     "highlight": [
+      "an officer now swears to the facts being inputted"
+     ],
+     "source": "Source: Final Consent Judgment, Lomas v. Harris County",
+     "at": "It ended"
+    },
+    {
+     "type": "doc",
+     "subtitle": "Final Consent Judgment",
+     "title": "Settlement terms",
+     "text": "It is understood by the parties that, by agreeing to settle this case, Harris County is not admitting liability nor is Harris County admitting that the policies and practices complained of in Plaintiffs' complaint are those of Harris County. Moreover, by agreement of the parties, Harris County has agreed to pay $75,000 in reasonable attorneys' fees.",
+     "highlight": [
+      "Harris County is not admitting liability",
+      "pay $75,000"
+     ],
+     "source": "Source: Final Consent Judgment, Lomas v. Harris County",
+     "at": "Harris County did not"
+    },
+    {
+     "type": "court",
+     "t": 431.0,
+     "at": "That agreement"
+    }
+   ]
+  },
+  {
+   "id": "outro",
+   "broll": 600.0,
+   "text": "So Judge Fleischer found no probable cause, because the sworn facts never gave a reason for the stop. But he also made clear this isn't the end of the road for the State. Prosecutors can still take the case to a grand jury, which can return an indictment, called a true bill, if it finds probable cause. One overlooked sentence in a sworn report decided this hearing, and it only happened because a new lawyer actually read the file. Should judges hold every case to this standard? Let me know in the comments.",
+   "beats": [
+    {
+     "type": "quote",
+     "text": "Theoretically, could I weasel out of it? Yes, but I don't want to. I want to stick with the agreement that the county came to with the district attorney's office.",
+     "by": "Judge David Fleischer"
+    },
+    {
+     "type": "broll",
+     "file": "broll/jury-room-people-deliberating.mp4",
+     "at": "this isn"
+    },
+    {
+     "type": "doc",
+     "subtitle": "Grand juries in the United States",
+     "title": "What a grand jury does",
+     "text": "A grand jury may issue an indictment for a crime, also known as a \"true bill\", only if it determines that those presenting had probable cause to believe that a crime has been committed by a criminal suspect.",
+     "highlight": [
+      "also known as a \"true bill\""
+     ],
+     "source": "Source: Wikipedia \u2014 Grand juries in the United States",
+     "at": "Prosecutors can"
+    },
+    {
+     "type": "broll",
+     "file": "broll/scales-of-justice-gavel.mp4",
+     "at": "One overlooked"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "name": "Courtroom Wood + Gold",
+ "best_for": "2 cameras; Verdictly/AudittheCourt jaisa. Captions frame ke neeche.",
+ "layout": "strip",
+ "frame": {
+  "style": "outer",
+  "color": "#D4AF37",
+  "thickness": 6
+ },
+ "divider": {
+  "color": "#D4AF37"
+ },
+ "cam_w": 880,
+ "gap": 8,
+ "cold_tag": "COMING UP...",
+ "tag_color": "#FFC93C",
+ "caption": {
+  "style": "karaoke",
+  "position": "below",
+  "font": "Arial Black",
+  "size": 64,
+  "color": "#FFFFFF",
+  "highlight": "#FFC93C",
+  "outline": "#000000",
+  "outline_w": 4,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}

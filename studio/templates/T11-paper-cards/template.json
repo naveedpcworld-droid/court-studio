@@ -1,0 +1,30 @@
+{
+ "name": "Paper Cards (light theme)",
+ "best_for": "2 cameras; light/clean look, safed card frames + shadow.",
+ "layout": "strip",
+ "frame": {
+  "style": "box",
+  "color": "#FFFFFF",
+  "thickness": 12
+ },
+ "cam_w": 850,
+ "gap": 50,
+ "shadow": true,
+ "caption": {
+  "style": "box",
+  "position": "below",
+  "font": "Arial Black",
+  "size": 50,
+  "color": "#111111",
+  "highlight": "#D10000",
+  "outline": "#000000",
+  "outline_w": 0,
+  "shadow": 0,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#FFD84D",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}

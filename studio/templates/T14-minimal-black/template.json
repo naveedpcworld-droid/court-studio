@@ -1,0 +1,28 @@
+{
+ "name": "Minimal Black (max footage)",
+ "best_for": "2 cameras; bari cameras, koi frame nahi, sirf footage.",
+ "layout": "strip",
+ "frame": {
+  "style": "none",
+  "thickness": 0
+ },
+ "cam_w": 948,
+ "gap": 12,
+ "caption": {
+  "style": "karaoke",
+  "position": "on",
+  "font": "Arial Black",
+  "size": 52,
+  "color": "#FFFFFF",
+  "highlight": "#FFE600",
+  "outline": "#000000",
+  "outline_w": 5,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}

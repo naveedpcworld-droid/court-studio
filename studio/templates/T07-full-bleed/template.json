@@ -1,0 +1,26 @@
+{
+ "name": "Full Bleed + Pop Words",
+ "best_for": "1 camera (fixed courtroom cam / akela judge) \u2014 edge to edge footage, ek ek bara word.",
+ "layout": "fullbleed",
+ "accent": "#FFFFFF",
+ "force_cover": true,
+ "name_tags": true,
+ "tag_size": 34,
+ "caption": {
+  "style": "pop",
+  "position": "on",
+  "font": "Impact",
+  "size": 120,
+  "color": "#FFFFFF",
+  "highlight": "#FFE600",
+  "outline": "#000000",
+  "outline_w": 7,
+  "shadow": 4,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}

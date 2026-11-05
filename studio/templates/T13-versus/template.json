@@ -1,0 +1,25 @@
+{
+ "name": "Versus Split (Judge VS Defendant)",
+ "best_for": "2 cameras: do aamne saamne halves, naam plates + VS badge. Labels zaroori.",
+ "layout": "versus",
+ "force_cover": true,
+ "left_color": "#1E6BFF",
+ "right_color": "#E52222",
+ "caption": {
+  "style": "karaoke",
+  "position": "on",
+  "font": "Impact",
+  "size": 72,
+  "color": "#FFFFFF",
+  "highlight": "#FFD000",
+  "outline": "#000000",
+  "outline_w": 5,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}

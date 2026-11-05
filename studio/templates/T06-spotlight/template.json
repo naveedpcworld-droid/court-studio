@@ -1,0 +1,25 @@
+{
+ "name": "Spotlight + Side Cams",
+ "best_for": "3+ cameras / Zoom hearings: ek bari camera + right mein baqi log.",
+ "layout": "spotlight",
+ "accent": "#FFFFFF",
+ "name_tags": true,
+ "tag_size": 26,
+ "caption": {
+  "style": "karaoke",
+  "position": "below",
+  "font": "Arial Black",
+  "size": 58,
+  "color": "#FFFFFF",
+  "highlight": "#00E0FF",
+  "outline": "#000000",
+  "outline_w": 4,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}

@@ -1,0 +1,215 @@
+42 case(s) found in 99.7 min. heat = conflict words (higher = more drama)
+SHORTLIST (>= 3 min, by heat) — read these in the transcript, heat is only a hint: #31 (8.3m, heat 21), #41 (9.7m, heat 10), #22 (4.9m, heat 8), #5 (5.1m, heat 7), #9 (6.5m, heat 6), #32 (4.4m, heat 6), #12 (3.5m, heat 5), #36 (3.3m, heat 4)
+
+CASE 1  0:00 - 1:06  (1.1 min, 146 words, heat 0)
+  opening: The court does call the case of the people of the state of Michigan versus Kenyon Jackson. I should call this for the people. Your honor. No, it's okay.
+
+CASE 2  1:06 - 3:08  (2.0 min, 236 words, heat 0)
+  opening: Case of people versus we're having a Smith people. Assistant public defender Natalie Kate with an on behalf of Mr. Smith, who is a via zoom at the forensic center circuit please state your name for the court. I'd like to say I'm sorry. I want to confirm, you know, cause all the other men say miss wh
+
+CASE 3  3:08 - 4:24  (1.3 min, 75 words, heat 0)
+  opening: Court does call the case people versus James Cobb. Good morning, your honor. Mr. Cobbs is approaching. Good to be back.
+
+CASE 4  4:24 - 5:12  (0.8 min, 78 words, heat 0)
+  opening: Because case people versus Perry Malone. Good morning, Christina Saxon for Perry Malone. Good morning, Mr. Malone. Can you state your name, please? Very well.
+
+CASE 5  5:12 - 10:20  (5.1 min, 737 words, heat 7)
+  opening: Or cause case of the people versus Joseph on bill. Good morning. I'm Christina Saxon for this upon bill. Who's approaching. Your name, sir. Joseph. Thank you.
+    [05:57] I was asking for to make a bond argument.
+    [06:06] Is in jail or retail fraud.
+    [06:17] And I'm asking for a nominal bond.
+    [06:49] His bond bill has an incredibly long criminal history with dozens of
+    [07:03] I don't have X jail.
+    [07:09] Mostly for boundary dicks and denied bond will continue.
+    [08:44] I was applying for personal rep of the property.
+
+CASE 6  10:20 - 11:33  (1.2 min, 64 words, heat 0)
+  opening: Or cause the case people versus Lucretia Pender. Help us with people. Got it. Hang on a second, Miss Pender.
+
+CASE 7  11:33 - 13:30  (1.9 min, 339 words, heat 4)
+  opening: Court does call the case of the people versus Mary Bernie. People. The public defender, Natalie Pate with an on behalf of this Barney stands. Mary Barney.
+    [12:09] Then I do have a very brief request as to bond with appropriate.
+    [12:19] As to bond.
+    [13:00] I can start to find the victims that we talk with them.
+    [13:19] Her bond will continue.
+
+CASE 8  13:30 - 14:45  (1.2 min, 195 words, heat 0)
+  opening: Or cause the case people versus Michaela Whitfield. Good morning. Your honor. Talk to Lucy and behalf of miss Whitfield.
+
+CASE 9  14:45 - 21:12  (6.5 min, 957 words, heat 6)
+  opening: People versus Kurt Bush. Morning on our Jay grant color. P five eight six five eight on behalf of miss Bush line who approaches the podium.
+    [15:38] We consent to these virtual proceedings.
+    [16:24] There's a sentence agreement of under seven,
+    [16:31] Where apart where bond if successful.
+    [17:39] And you would be sentenced before judge.
+    [20:21] not be bound by any sentence evaluation or recommendation.
+    [20:51] The pre-sentence investigation and reporters ordered at 15th district
+
+CASE 10  21:12 - 23:30  (2.3 min, 285 words, heat 1)
+  opening: Or cause case people versus Christopher Brewer. I don't know what our assistant prosecutor can turn into the people. Assistant public defender bandana with Mr. Brewer, who is joining me coding him now.
+    [22:20] president consent to appear via zoom is Williams.
+
+CASE 11  23:30 - 24:19  (0.8 min, 106 words, heat 0)
+  opening: I'll just call her of course recalls the case people versus Lucretia Pender Dawson's eight on behalf of miss Pender miss Pender. Can you say your name? Appreciate Pender. Thank you. What are we doing? The court see it is a flipper case. So there is some additional contact I need to have with the opp
+
+CASE 12  24:19 - 27:48  (3.5 min, 526 words, heat 5)
+  opening: Or cause the case people versus Devon Brown I Happen appearing on behalf of the Attorney General In good morning, you're on our system public defender elects with an on behalf, mr. Brown who's approaching the podium
+    [25:56] Your honor may I just bond briefly in that matter in which one the child support case your honor want to respond
+    [26:06] Mr. Brown would like me to ask the court either a reduction or personal bond your honor when this matter took place
+    [26:22] He has been fighting for his daughter for the last 10 months before being brought into custody. He was working for different jobs
+    [26:39] He's been in custody for eight days as of today
+    [26:41] The bond was set at a 25 percent of what the outstanding charge was correct. Correct, your honor
+
+CASE 13  27:48 - 29:47  (2.0 min, 303 words, heat 0)
+  opening: Case people versus harold couch And good morning your honor jose fall appearing forward on behalf of mr Couch who now stands to my right mr couch if you could say your name for the record, please. Here we'll see couch jr Here
+
+CASE 14  29:47 - 31:21  (1.6 min, 183 words, heat 0)
+  opening: Or does the case people versus kadaira a kiji three cases You want to do it down here Good morning, your honor jonathan sachs for mr ekeji on the case ending in 1 6 7 8 Assistant public defender natalie pate with an on behalf of mr
+
+CASE 15  31:21 - 32:32  (1.2 min, 144 words, heat 0)
+  opening: Or cause case of the people versus william riddle Good morning, your honor j grant miller p 5 8 6 5 8 on behalf of mr riddle who approaches the protean Your name, sir. Oh, you're michael riddle. All right. What are we doing? We had set this day to make sure that I had all the discovery I've Spoken w
+
+CASE 16  32:32 - 35:04  (2.5 min, 331 words, heat 1)
+  opening: Cause case people versus amber Almany And assistant public defender natalie paid stepping in for mr Gaddy on behalf of miss alney who stands to my right please stay in amber almany your honor. Thank you
+    [34:59] Bond will continue. Thank you, your honor. All right. Thank you
+
+CASE 17  35:04 - 37:48  (2.7 min, 415 words, heat 2)
+  opening: Court calls the case of the people versus edward casto Also based on behalf of mr. Edward castle Yes, sir. Can you start your polling for the record? I would ask them. Thank you
+    [36:19] May I do what may I just bond when appropriate he's out. Yeah, he's just on a tether. You're gonna blow it. He's go ahead
+    [37:00] So i'm going to deny your request bond will continue with it. Thank you understood. Thank you
+
+CASE 18  37:48 - 38:47  (1.0 min, 89 words, heat 0)
+  opening: Okay court calls the case people versus javante jackson I don't know Thank you honor cause the mill based on behalf of mr Javante jackson, it's my right javante can say your phone name for the record
+
+CASE 19  38:47 - 39:59  (1.2 min, 131 words, heat 0)
+  opening: Court calls the case of the people versus jasmine morris For the people Morris the fourth year please say your name for the record Can you please take your name for the record miss morris jasmine
+
+CASE 20  39:59 - 41:40  (1.7 min, 161 words, heat 2)
+  opening: Court calls case people versus james holmes Thank you. Good morning, your honor. Jay grant or p58658 on behalf of mr. Holmes who approaches the podium Please say your name james holmes
+    [40:27] 2026 9 a.m bond continue. Thank you, your honor
+    [41:24] Bond will continue. Thank you, your honor. Thank you. What was that data?
+
+CASE 21  41:40 - 43:09  (1.5 min, 150 words, heat 1)
+  opening: Because I shouldn't say it out loud corko's case people versus jose che then Aganan if that's Okay
+    [43:00] Bond will continue. Thank you, your honor. All right. Thank you. Thank you, sir
+
+CASE 22  43:09 - 48:00  (4.9 min, 690 words, heat 8)
+  opening: Or does call the case other people versus dallas williams Good morning, your honor. Craig pappan appearing on behalf of the people for the attorney general Good morning, your honor. Jay grant miller p 5 8 6 5 8 on behalf of mr. William Your name alice williams. Thank you
+    [43:59] Quite frankly, your honor. I would like to dress bond because I think he just needs to get back to work
+    [45:08] Okay, I get all that but what i'm saying is it. I don't think that would be a reduction in bond. I mean
+    [46:32] So, what is the bond are you well
+    [46:35] We don't have debtors prison and he's getting more and more in a rearage as he sits in jail
+    [46:39] Not paying the 900 a month anything about debtors prison. It's about taking care of your children
+    [46:44] Yes, you got anything else in terms of a bond argument on this? No, your honor. All right
+    [47:51] Bond will continue
+
+CASE 23  48:00 - 49:02  (1.0 min, 106 words, heat 4)
+  opening: Modify his bond, which is already set at 25 centers tonight. Thank you. Of course those call the case of the people versus marcus jones It actually calls for people Canada dish on behalf of mr. Jones stepping in for APD pay on this matter Okay
+    [48:01] Modify his bond, which is already set at 25 centers tonight. Thank you. Of course those call the case of the people versus marcus jones
+    [48:43] Having failed to appear bench warrant relationship for defendants failure to appear
+    [48:52] Bond will be set in the amount of ten thousand dollars cash surety
+    [48:58] That warrant will issue immediately
+
+CASE 24  49:02 - 49:47  (0.8 min, 73 words, heat 1)
+  opening: Or cause case of the people versus johnny pain Assistant public defender santa white on behalf of johnny pain your name, sir. Johnny charles pain Your honor we're asking from the german. I do think this is something that can Don't even get waved or or worked out, but we're asking for a german
+    [49:41] 2026 9 a.m. Bond continue
+
+CASE 25  49:47 - 50:57  (1.2 min, 188 words, heat 4)
+  opening: Court calls the case people versus mohammed kamisko kamisoko Water system processing attorney for the future Morning in your honor cause symbol that said that mohammed kamisoko was present to my right. Can you say your phone name for the record, sir? Muhammad kamisoko. Okay. Yes, your honor. Uh at t
+    [50:19] 2026 9 a.m. Bond continue
+    [50:28] I am I am informed that the victim in this case is present here
+    [50:32] At least in the building is not in the courtroom and victim intended to ask the court for contact
+    [50:52] Any request so bond will continue with the condition
+
+CASE 26  50:57 - 52:14  (1.3 min, 125 words, heat 0)
+  opening: Or cause case people versus tyree bivens It's christopher quinn appearing on behalf of mr biz Your name, sir. Tyree bivens. Thank you We just like like to set this matter for exam. We you have all of this discovery. Yes, I believe so judge. Yes
+
+CASE 27  52:14 - 53:43  (1.5 min, 196 words, heat 0)
+  opening: Okay, people versus derrick mcguire Okay Okay, so they can hear us And all right, mr. McGuire, can you state your name, sir?
+
+CASE 28  53:43 - 55:04  (1.4 min, 211 words, heat 0)
+  opening: Court calls the case people versus adam parrala And the water system prosecuting attorney to the people On behalf of mr parrala, can you please see your name for the record adam dave parrala? We also I forgot to I think include the case number on the green sheet I apologize for that in the that's tr
+
+CASE 29  55:04 - 57:12  (2.1 min, 268 words, heat 3)
+  opening: Court calls case people versus Tyrell Rickett I should call this video How about defender fonzo white on behalf of Tyrell Rickett He's approaching the podium. Can you state your name, please? Hi, how are you doing? I'm Tyrell Rickett
+    [55:34] 9 a.m bond continued
+    [56:35] Oh, this is the only thing that's holding her I believe she was intending to post the bond I believe it's only a hundred dollars
+    [57:08] Bond continue. Thank you
+
+CASE 30  57:12 - 58:04  (0.9 min, 89 words, heat 1)
+  opening: Calls case people versus steven serda No, you know you were good it was him we were waiting on I did not know you were waiting on him Cost a little based on behalf of mr. Steven serda. Can you state your point for the record? Thank you at this time requested
+    [57:59] Bond continue. Thank you. Your honor
+
+CASE 31  58:04 - 66:21  (8.3 min, 1145 words, heat 21)
+  opening: Short calls case people versus tim shelly Your name, sir, tom shelly And my daughter's on behalf of mr. Shelly Um
+    [58:25] Your honor, um, I believe mr. Shelly had been released from custody on the friday. I tried to reach him
+    [58:31] Could not reach him. He ended up back in custody. Um, I believe his 14v case
+    [58:58] Yeah, right, um, he did get really he did get a pr bond with a backup he has a one hundred dollar
+    [59:08] 1010 bond in this case
+    [59:12] Um, i'd ask for a personal recognizance bond your honor, uh, I
+    [59:16] believe he posted a bond on
+    [59:19] When did you post the bond on the tape? I had a one hundred dollar
+    [59:26] personal bond
+
+CASE 32  66:21 - 70:44  (4.4 min, 573 words, heat 6)
+  opening: Corcoran's case people versus matthew smith Office for the teaching Morning your honor system public defender lexis erps with an on behalf of smith. We should be appearing by zoom. Mr Smith. Can you state your name, please?
+    [67:11] And your honor we would like to set this for exam and I would like to address bond if the court would allow
+    [67:36] As to bond
+    [68:56] And at the time he failed to appear there was a bond violation for him
+    [69:11] He also has a whole lot of weighing with bond and I burn assault
+    [69:18] He has a whole lot of appear with bond and I for fraud and he has a whole lot of oakland
+    [69:22] Her stolen property with bond did not so if this where's our tether
+
+CASE 33  70:44 - 71:44  (1.0 min, 108 words, heat 2)
+  opening: The court calls the case people versus laura waldrin Lorenzo that's my dad's name. Um, what'd you say? I said lorenzo There's your client. I spoke with this warden last night. I do expect to hear can you do? Yeah, can we pass it? Yes, I can give her my docket. No
+    [71:25] Bench warrant will issue for defendants failure to appear
+    [71:29] Round is setting the amount of ten thousand dollars cash charity. That warrant will issue immediately
+
+CASE 34  71:44 - 73:28  (1.7 min, 179 words, heat 0)
+  opening: Guys people versus kirby snyder two cases What is uh What why Why why who's who's recording
+
+CASE 35  73:28 - 74:39  (1.2 min, 103 words, heat 1)
+  opening: For cause case people versus jason perkins Actually, it's for people Your honor miss you've written down on the site He's in one of the what
+    [74:13] Yell of a green sheet. We are asking for a brief adjournment to continue to the negotiation doesn't matter your names
+
+CASE 36  74:39 - 77:55  (3.3 min, 470 words, heat 4)
+  opening: Or cause case of the people versus bunny saint john and keep it off until you get out of my building I just felt this for the people It's always a bender fence. I don't want on behalf of saint john who is standing to my right. Um Your name
+    [75:33] prosecutor in defense agreed to a sentence of 74 11 if she's eligible
+    [75:53] I'm staying jail for a year
+    [75:56] No, that's the maximum penalty. Okay. Okay. I don't know what your sentence would be
+    [76:17] The form indicates that the prosecutor and defendant have agreed to a deferred sentence
+
+CASE 37  77:55 - 80:27  (2.5 min, 297 words, heat 1)
+  opening: What I thought court calls the case people versus joel is it serving off I don't want her assistant prosecuting attorney Who's just that? Was that burned down? Seriously, are you ready with your next person? You got somebody there, but
+    [80:19] Bond will continue
+
+CASE 38  80:27 - 86:06  (5.6 min, 848 words, heat 4)
+  opening: For those case people versus jolz Capital on behalf of mr. Serbanoff Your name, sir Joel Serbanoff your honor
+    [82:23] I would not be your sentencing judge in this case and you would be sentenced before judge
+    [85:17] You would not be entitled to withdraw your plea and the court would not be bound by any sentence evaluation or recommendation you understand that sir
+    [85:49] Pre-sentence investigation and report is ordered at 15 district corporation
+    [86:02] Next church bond will continue. Thank you
+
+CASE 39  86:06 - 87:28  (1.4 min, 189 words, heat 0)
+  opening: And it sounds good court cause case people versus mathy wallace I don't want it to prosecute me attorney Public defender sander right on behalf of matthew wallace Please take connection present
+
+CASE 40  87:28 - 88:28  (1.0 min, 139 words, heat 1)
+  opening: Corkhouse case people versus teneris william And on behalf of people Assistant public defender vendela on behalf of mr. Williams Who is joining me at the podium now?
+    [88:20] Thank you, your honor 9 a.m. Bond continue
+
+CASE 41  88:28 - 98:09  (9.7 min, 1090 words, heat 10)
+  opening: Lord that's called the case people state of michigan versus monies. Sue st. John. That's a little bit on behalf of the same John, can you see your full name for the record money? I had before me I had before me a plea form that indicates that the defendant
+    [89:06] There's a sentence agreement that the defendant would get 74
+    [89:57] You also understand ma'am that while i'm taking your plea, I would not be your sentencing judge. We would be sentenced before judge far in the
+    [92:47] And the court would not be bound by any sentence evaluation or recommendation. You understand that?
+    [93:15] pre-sentence investigation and report is ordered
+    [94:03] All right, then may I just bond you may
+    [94:06] Then my client is asking for a pr bond at this time while she waits for sentencing
+    [94:43] Clean now. Oh, yeah, because you've been in jail. We don't let she do that there, but i'm gonna be taking
+    [96:56] Basically was warranted because of her years
+
+CASE 42  98:09 - 99:42  (1.5 min, 217 words, heat 2)
+  opening: Court calls the case people versus laura walder I just felt good people. This is a recall This is the recall We were already done with this. We're recalling the case at the request of miss white. I would be done off the bench
+    [98:36] We asked that the warrant be recalled
+    [99:35] 9 a.m bond will continue. Thank you. All right. Thank you
+

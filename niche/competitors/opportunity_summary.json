@@ -1,0 +1,95 @@
+{
+  "original_transcripts": 10673,
+  "trial_level": 7738,
+  "appellate": 2935,
+  "tier_A": 8,
+  "tier_B": 73,
+  "tier_C": 590,
+  "with_cop": 195,
+  "with_sentence": 1750,
+  "with_sovereign": 170,
+  "with_case_marker": 888,
+  "with_competitor_judge": 15,
+  "top_original_judges": [
+    [
+      "Hitzemann",
+      1028
+    ],
+    [
+      "Sean Perkins",
+      986
+    ],
+    [
+      "Shannon Holmes",
+      429
+    ],
+    [
+      "Healis",
+      286
+    ],
+    [
+      "Kenneth King",
+      283
+    ],
+    [
+      "Donald Coleman",
+      275
+    ],
+    [
+      "Bell",
+      274
+    ],
+    [
+      "Ruppe",
+      266
+    ],
+    [
+      "Tenisha Yancey",
+      209
+    ],
+    [
+      "Michael Wagner",
+      134
+    ],
+    [
+      "Ramsey-Heath",
+      118
+    ],
+    [
+      "Ronald Giles",
+      111
+    ],
+    [
+      "Aliyah Sabree",
+      104
+    ],
+    [
+      "Adam Sabree",
+      91
+    ],
+    [
+      "Merritt",
+      84
+    ],
+    [
+      "Sean",
+      68
+    ],
+    [
+      "Merrick",
+      62
+    ],
+    [
+      "Shan",
+      53
+    ],
+    [
+      "Shannon Holmes'",
+      45
+    ],
+    [
+      "David",
+      38
+    ]
+  ]
+}

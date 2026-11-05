@@ -1,0 +1,32 @@
+{
+ "name": "Classic Strip \u2014 CapCut tutorial wala",
+ "best_for": "2 cameras (judge | courtroom). Sab se safe.",
+ "layout": "strip",
+ "frame": {
+  "style": "lines",
+  "color": "#FFFFFF",
+  "thickness": 8
+ },
+ "divider": {
+  "color": "#FFFFFF"
+ },
+ "cam_w": 900,
+ "gap": 8,
+ "caption": {
+  "style": "karaoke",
+  "position": "on",
+  "font": "Arial Black",
+  "size": 50,
+  "color": "#FFFFFF",
+  "highlight": "#FFE600",
+  "outline": "#000000",
+  "outline_w": 4,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}

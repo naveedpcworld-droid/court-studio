@@ -1,0 +1,26 @@
+{
+ "name": "Courtroom + Big Picture-in-Picture",
+ "best_for": "2 cameras jahan ek WIDE courtroom shot hai: courtroom full screen, judge/defendant bara PiP.",
+ "layout": "bigpip",
+ "accent": "#FFFFFF",
+ "force_cover": true,
+ "name_tags": true,
+ "tag_size": 28,
+ "caption": {
+  "style": "karaoke",
+  "position": "on",
+  "font": "Arial Black",
+  "size": 58,
+  "color": "#FFFFFF",
+  "highlight": "#FFE600",
+  "outline": "#000000",
+  "outline_w": 4,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 5,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}

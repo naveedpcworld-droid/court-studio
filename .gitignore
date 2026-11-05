@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+studio/config.env
+desk/.env
+library/used.json
+studio/projects/*/
+!studio/projects/_example-*/
+!studio/projects/_demo-*/
+studio/projects/*/src*.mp4
+studio/projects/*/crop_*.mp4
+studio/projects/*/audio.m4a
+studio/projects/*/beats/
+studio/projects/*/_seg_*/
+studio/projects/*/final_*.mp4

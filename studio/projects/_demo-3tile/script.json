@@ -1,0 +1,47 @@
+{
+ "title": "Lawyer Says \"We Don't Have Debtors Prison\"... Judge Simpson SHUTS IT DOWN!",
+ "voice": "en-US-BrianMultilingualNeural",
+ "cold_open": [
+  204.0,
+  215.2
+ ],
+ "hearing": [
+  0.5,
+  287.0
+ ],
+ "skip": [],
+ "auto_trim": 2.5,
+ "vo": [
+  {
+   "id": "hook",
+   "broll": 110.0,
+   "text": "This man owes more than twenty thousand dollars in child support across six different support orders. His lawyer walked into Judge Simpson's courtroom and argued that keeping him in jail is basically a debtors prison. Judge Simpson had a very different way of looking at it. And when the lawyer tried one more sarcastic shot at the state, the judge shut that down too. Let's get into it."
+  },
+  {
+   "id": "p1",
+   "at": 61.6,
+   "text": "So here's the situation. Dallas Williams is in custody on an unpaid child support case. His lawyer says the state is already garnishing the maximum the law allows from his paycheck, across six separate support orders, so he keeps falling further behind no matter what. The ask is simple. Lower the bond so he can get back to work. It sounds reasonable. But Judge Simpson wants to know what happened during the years this case is actually about."
+  },
+  {
+   "id": "p2",
+   "at": 137.7,
+   "text": "And there's the real issue. The charges cover November twenty twenty to July twenty twenty three. That's almost three years. Williams says he wasn't working and that he was homeless for part of that time, and that's a hard situation. But Judge Simpson keeps coming back to one point. What's being taken from his paycheck now doesn't erase the years when nothing was paid. Now his lawyer tries to argue there's some kind of exception. Watch the judge's face."
+  },
+  {
+   "id": "p3",
+   "at": 219.1,
+   "text": "That line is the whole case. The defense says we don't have debtors prison. And Judge Simpson fires right back. This isn't about debt. It's about taking care of your children. Six support orders means six sets of kids waiting on this money. So the bond stays exactly where it is. But the lawyer isn't done. He asks for a preliminary exam, and the way he phrases it does not go over well with the judge."
+  },
+  {
+   "id": "outro",
+   "broll": 268.0,
+   "text": "So the bond stays, and Dallas Williams sits in custody until his preliminary exam on January thirteenth. His lawyer's comment about the state taking more money from the man got corrected on the spot. Judge Simpson made it clear the crime isn't the garnishment. It's the support that went unpaid for almost three years. Do you think the bond should have been lowered so he could go back to work, or did the judge get this one right? Let me know in the comments."
+  }
+ ],
+ "info": {
+  "case_title": "People v. Dallas Williams",
+  "court": "14A-1 District Court, Michigan",
+  "charge": "Unpaid child support \u2014 6 orders",
+  "judge": "Judge J. Cedric Simpson"
+ }
+}

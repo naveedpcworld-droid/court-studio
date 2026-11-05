@@ -1,0 +1,15 @@
+{
+  "title": "Man Runs From Cops, Gets TASED... Then Tries Probation. Judge Says NO WAY",
+  "info": {"case_title": "State of Ohio v. Ricardo Quinones", "court": "Warren County Common Pleas, Ohio",
+           "charge": "Fleeing, resisting, cocaine, hit-skip", "judge": "Judge Timothy Tepe"},
+  "labels_default": ["JUDGE TEPE"],
+  "cold_open": [24.6, 48.8],
+  "hearing": [0.0, 239.5],
+  "auto_trim": 2.5,
+  "vo": [
+    {"id": "hook", "broll": 100.0, "text": "This man was pulled over with no headlights, smelled of alcohol, pulled a white substance out of his pocket, fought the officers and had to be tased. Then it turned out he'd just done a hit and run. Now he's standing in front of the judge pleading guilty. And what the judge finds in his record changes everything. Let's get into it."},
+    {"id": "p1", "at": 100.0, "text": "Let's recap that police report, because it's wild. Speeding at night with no headlights, cocaine on the driver's seat, a hit and run at a business minutes earlier, and he tried to get out of the cruiser and injured a deputy's shoulder. He pleads guilty to all of it. And now the question is sentencing. Watch what the judge pulls up next."},
+    {"id": "p2", "at": 161.6, "text": "And there it is. An immigration hold, an outstanding warrant out of Franklin County for drugs, impaired driving and domestic violence. The prosecutor wants prison. Even his own lawyer admits she wasn't ready for this. Probation is basically off the table now."},
+    {"id": "outro", "broll": 230.0, "text": "With a prior record, an immigration hold and warrants in another county, the judge makes it clear there is simply no way he gets community control. One night of running from the police turned into prison and possibly deportation. Was there any version of this where he walks away? Let me know in the comments."}
+  ]
+}

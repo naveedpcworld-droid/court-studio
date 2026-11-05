@@ -1,0 +1,27 @@
+{
+ "name": "Cinematic Letterbox",
+ "best_for": "1-2 cameras; film jaisa 2.39:1, commentary B&W, captions neeche kaali patti mein.",
+ "layout": "cinema",
+ "force_cover": true,
+ "vo_style": "bw",
+ "cold_tag": "COMING UP",
+ "tag_color": "#C9A227",
+ "text_font": "Georgia",
+ "caption": {
+  "style": "karaoke",
+  "position": "on",
+  "font": "Georgia",
+  "size": 46,
+  "color": "#FFFFFF",
+  "highlight": "#C9A227",
+  "outline": "#000000",
+  "outline_w": 2,
+  "shadow": 0,
+  "upper": false,
+  "max_words": 6,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}

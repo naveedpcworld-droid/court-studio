@@ -1,0 +1,533 @@
+[
+ {
+  "n": 1,
+  "start": 0.0,
+  "end": 66.8,
+  "minutes": 1.1,
+  "words": 146,
+  "heat": 0,
+  "opening": "The court does call the case of the people of the state of Michigan versus Kenyon Jackson. I should call this for the people. Your honor. No, it's okay.",
+  "hot_lines": []
+ },
+ {
+  "n": 2,
+  "start": 66.8,
+  "end": 188.7,
+  "minutes": 2.0,
+  "words": 236,
+  "heat": 0,
+  "opening": "Case of people versus we're having a Smith people. Assistant public defender Natalie Kate with an on behalf of Mr. Smith, who is a via zoom at the forensic center circuit please state your name for the court. I'd like to say I'm sorry. I want to confirm, you know, cause all the other men say miss wh",
+  "hot_lines": []
+ },
+ {
+  "n": 3,
+  "start": 188.7,
+  "end": 264.1,
+  "minutes": 1.3,
+  "words": 75,
+  "heat": 0,
+  "opening": "Court does call the case people versus James Cobb. Good morning, your honor. Mr. Cobbs is approaching. Good to be back.",
+  "hot_lines": []
+ },
+ {
+  "n": 4,
+  "start": 264.1,
+  "end": 312.1,
+  "minutes": 0.8,
+  "words": 78,
+  "heat": 0,
+  "opening": "Because case people versus Perry Malone. Good morning, Christina Saxon for Perry Malone. Good morning, Mr. Malone. Can you state your name, please? Very well.",
+  "hot_lines": []
+ },
+ {
+  "n": 5,
+  "start": 312.1,
+  "end": 620.0,
+  "minutes": 5.1,
+  "words": 737,
+  "heat": 7,
+  "opening": "Or cause case of the people versus Joseph on bill. Good morning. I'm Christina Saxon for this upon bill. Who's approaching. Your name, sir. Joseph. Thank you.",
+  "hot_lines": [
+   "[05:57] I was asking for to make a bond argument.",
+   "[06:06] Is in jail or retail fraud.",
+   "[06:17] And I'm asking for a nominal bond.",
+   "[06:49] His bond bill has an incredibly long criminal history with dozens of",
+   "[07:03] I don't have X jail.",
+   "[07:09] Mostly for boundary dicks and denied bond will continue.",
+   "[08:44] I was applying for personal rep of the property."
+  ]
+ },
+ {
+  "n": 6,
+  "start": 620.0,
+  "end": 693.7,
+  "minutes": 1.2,
+  "words": 64,
+  "heat": 0,
+  "opening": "Or cause the case people versus Lucretia Pender. Help us with people. Got it. Hang on a second, Miss Pender.",
+  "hot_lines": []
+ },
+ {
+  "n": 7,
+  "start": 693.7,
+  "end": 810.1,
+  "minutes": 1.9,
+  "words": 339,
+  "heat": 4,
+  "opening": "Court does call the case of the people versus Mary Bernie. People. The public defender, Natalie Pate with an on behalf of this Barney stands. Mary Barney.",
+  "hot_lines": [
+   "[12:09] Then I do have a very brief request as to bond with appropriate.",
+   "[12:19] As to bond.",
+   "[13:00] I can start to find the victims that we talk with them.",
+   "[13:19] Her bond will continue."
+  ]
+ },
+ {
+  "n": 8,
+  "start": 810.1,
+  "end": 885.0,
+  "minutes": 1.2,
+  "words": 195,
+  "heat": 0,
+  "opening": "Or cause the case people versus Michaela Whitfield. Good morning. Your honor. Talk to Lucy and behalf of miss Whitfield.",
+  "hot_lines": []
+ },
+ {
+  "n": 9,
+  "start": 885.0,
+  "end": 1272.5,
+  "minutes": 6.5,
+  "words": 957,
+  "heat": 6,
+  "opening": "People versus Kurt Bush. Morning on our Jay grant color. P five eight six five eight on behalf of miss Bush line who approaches the podium.",
+  "hot_lines": [
+   "[15:38] We consent to these virtual proceedings.",
+   "[16:24] There's a sentence agreement of under seven,",
+   "[16:31] Where apart where bond if successful.",
+   "[17:39] And you would be sentenced before judge.",
+   "[20:21] not be bound by any sentence evaluation or recommendation.",
+   "[20:51] The pre-sentence investigation and reporters ordered at 15th district"
+  ]
+ },
+ {
+  "n": 10,
+  "start": 1272.5,
+  "end": 1410.3,
+  "minutes": 2.3,
+  "words": 285,
+  "heat": 1,
+  "opening": "Or cause case people versus Christopher Brewer. I don't know what our assistant prosecutor can turn into the people. Assistant public defender bandana with Mr. Brewer, who is joining me coding him now.",
+  "hot_lines": [
+   "[22:20] president consent to appear via zoom is Williams."
+  ]
+ },
+ {
+  "n": 11,
+  "start": 1410.3,
+  "end": 1459.9,
+  "minutes": 0.8,
+  "words": 106,
+  "heat": 0,
+  "opening": "I'll just call her of course recalls the case people versus Lucretia Pender Dawson's eight on behalf of miss Pender miss Pender. Can you say your name? Appreciate Pender. Thank you. What are we doing? The court see it is a flipper case. So there is some additional contact I need to have with the opp",
+  "hot_lines": []
+ },
+ {
+  "n": 12,
+  "start": 1459.9,
+  "end": 1668.0,
+  "minutes": 3.5,
+  "words": 526,
+  "heat": 5,
+  "opening": "Or cause the case people versus Devon Brown I Happen appearing on behalf of the Attorney General In good morning, you're on our system public defender elects with an on behalf, mr. Brown who's approaching the podium",
+  "hot_lines": [
+   "[25:56] Your honor may I just bond briefly in that matter in which one the child support case your honor want to respond",
+   "[26:06] Mr. Brown would like me to ask the court either a reduction or personal bond your honor when this matter took place",
+   "[26:22] He has been fighting for his daughter for the last 10 months before being brought into custody. He was working for different jobs",
+   "[26:39] He's been in custody for eight days as of today",
+   "[26:41] The bond was set at a 25 percent of what the outstanding charge was correct. Correct, your honor"
+  ]
+ },
+ {
+  "n": 13,
+  "start": 1668.0,
+  "end": 1787.8,
+  "minutes": 2.0,
+  "words": 303,
+  "heat": 0,
+  "opening": "Case people versus harold couch And good morning your honor jose fall appearing forward on behalf of mr Couch who now stands to my right mr couch if you could say your name for the record, please. Here we'll see couch jr Here",
+  "hot_lines": []
+ },
+ {
+  "n": 14,
+  "start": 1787.8,
+  "end": 1881.9,
+  "minutes": 1.6,
+  "words": 183,
+  "heat": 0,
+  "opening": "Or does the case people versus kadaira a kiji three cases You want to do it down here Good morning, your honor jonathan sachs for mr ekeji on the case ending in 1 6 7 8 Assistant public defender natalie pate with an on behalf of mr",
+  "hot_lines": []
+ },
+ {
+  "n": 15,
+  "start": 1881.9,
+  "end": 1952.1,
+  "minutes": 1.2,
+  "words": 144,
+  "heat": 0,
+  "opening": "Or cause case of the people versus william riddle Good morning, your honor j grant miller p 5 8 6 5 8 on behalf of mr riddle who approaches the protean Your name, sir. Oh, you're michael riddle. All right. What are we doing? We had set this day to make sure that I had all the discovery I've Spoken w",
+  "hot_lines": []
+ },
+ {
+  "n": 16,
+  "start": 1952.1,
+  "end": 2104.7,
+  "minutes": 2.5,
+  "words": 331,
+  "heat": 1,
+  "opening": "Cause case people versus amber Almany And assistant public defender natalie paid stepping in for mr Gaddy on behalf of miss alney who stands to my right please stay in amber almany your honor. Thank you",
+  "hot_lines": [
+   "[34:59] Bond will continue. Thank you, your honor. All right. Thank you"
+  ]
+ },
+ {
+  "n": 17,
+  "start": 2104.7,
+  "end": 2268.8,
+  "minutes": 2.7,
+  "words": 415,
+  "heat": 2,
+  "opening": "Court calls the case of the people versus edward casto Also based on behalf of mr. Edward castle Yes, sir. Can you start your polling for the record? I would ask them. Thank you",
+  "hot_lines": [
+   "[36:19] May I do what may I just bond when appropriate he's out. Yeah, he's just on a tether. You're gonna blow it. He's go ahead",
+   "[37:00] So i'm going to deny your request bond will continue with it. Thank you understood. Thank you"
+  ]
+ },
+ {
+  "n": 18,
+  "start": 2268.8,
+  "end": 2327.1,
+  "minutes": 1.0,
+  "words": 89,
+  "heat": 0,
+  "opening": "Okay court calls the case people versus javante jackson I don't know Thank you honor cause the mill based on behalf of mr Javante jackson, it's my right javante can say your phone name for the record",
+  "hot_lines": []
+ },
+ {
+  "n": 19,
+  "start": 2327.1,
+  "end": 2399.9,
+  "minutes": 1.2,
+  "words": 131,
+  "heat": 0,
+  "opening": "Court calls the case of the people versus jasmine morris For the people Morris the fourth year please say your name for the record Can you please take your name for the record miss morris jasmine",
+  "hot_lines": []
+ },
+ {
+  "n": 20,
+  "start": 2399.9,
+  "end": 2500.4,
+  "minutes": 1.7,
+  "words": 161,
+  "heat": 2,
+  "opening": "Court calls case people versus james holmes Thank you. Good morning, your honor. Jay grant or p58658 on behalf of mr. Holmes who approaches the podium Please say your name james holmes",
+  "hot_lines": [
+   "[40:27] 2026 9 a.m bond continue. Thank you, your honor",
+   "[41:24] Bond will continue. Thank you, your honor. Thank you. What was that data?"
+  ]
+ },
+ {
+  "n": 21,
+  "start": 2500.4,
+  "end": 2589.0,
+  "minutes": 1.5,
+  "words": 150,
+  "heat": 1,
+  "opening": "Because I shouldn't say it out loud corko's case people versus jose che then Aganan if that's Okay",
+  "hot_lines": [
+   "[43:00] Bond will continue. Thank you, your honor. All right. Thank you. Thank you, sir"
+  ]
+ },
+ {
+  "n": 22,
+  "start": 2589.0,
+  "end": 2880.8,
+  "minutes": 4.9,
+  "words": 690,
+  "heat": 8,
+  "opening": "Or does call the case other people versus dallas williams Good morning, your honor. Craig pappan appearing on behalf of the people for the attorney general Good morning, your honor. Jay grant miller p 5 8 6 5 8 on behalf of mr. William Your name alice williams. Thank you",
+  "hot_lines": [
+   "[43:59] Quite frankly, your honor. I would like to dress bond because I think he just needs to get back to work",
+   "[45:08] Okay, I get all that but what i'm saying is it. I don't think that would be a reduction in bond. I mean",
+   "[46:32] So, what is the bond are you well",
+   "[46:35] We don't have debtors prison and he's getting more and more in a rearage as he sits in jail",
+   "[46:39] Not paying the 900 a month anything about debtors prison. It's about taking care of your children",
+   "[46:44] Yes, you got anything else in terms of a bond argument on this? No, your honor. All right",
+   "[47:51] Bond will continue"
+  ]
+ },
+ {
+  "n": 23,
+  "start": 2880.8,
+  "end": 2942.6,
+  "minutes": 1.0,
+  "words": 106,
+  "heat": 4,
+  "opening": "Modify his bond, which is already set at 25 centers tonight. Thank you. Of course those call the case of the people versus marcus jones It actually calls for people Canada dish on behalf of mr. Jones stepping in for APD pay on this matter Okay",
+  "hot_lines": [
+   "[48:01] Modify his bond, which is already set at 25 centers tonight. Thank you. Of course those call the case of the people versus marcus jones",
+   "[48:43] Having failed to appear bench warrant relationship for defendants failure to appear",
+   "[48:52] Bond will be set in the amount of ten thousand dollars cash surety",
+   "[48:58] That warrant will issue immediately"
+  ]
+ },
+ {
+  "n": 24,
+  "start": 2942.6,
+  "end": 2987.8,
+  "minutes": 0.8,
+  "words": 73,
+  "heat": 1,
+  "opening": "Or cause case of the people versus johnny pain Assistant public defender santa white on behalf of johnny pain your name, sir. Johnny charles pain Your honor we're asking from the german. I do think this is something that can Don't even get waved or or worked out, but we're asking for a german",
+  "hot_lines": [
+   "[49:41] 2026 9 a.m. Bond continue"
+  ]
+ },
+ {
+  "n": 25,
+  "start": 2987.8,
+  "end": 3057.9,
+  "minutes": 1.2,
+  "words": 188,
+  "heat": 4,
+  "opening": "Court calls the case people versus mohammed kamisko kamisoko Water system processing attorney for the future Morning in your honor cause symbol that said that mohammed kamisoko was present to my right. Can you say your phone name for the record, sir? Muhammad kamisoko. Okay. Yes, your honor. Uh at t",
+  "hot_lines": [
+   "[50:19] 2026 9 a.m. Bond continue",
+   "[50:28] I am I am informed that the victim in this case is present here",
+   "[50:32] At least in the building is not in the courtroom and victim intended to ask the court for contact",
+   "[50:52] Any request so bond will continue with the condition"
+  ]
+ },
+ {
+  "n": 26,
+  "start": 3057.9,
+  "end": 3134.9,
+  "minutes": 1.3,
+  "words": 125,
+  "heat": 0,
+  "opening": "Or cause case people versus tyree bivens It's christopher quinn appearing on behalf of mr biz Your name, sir. Tyree bivens. Thank you We just like like to set this matter for exam. We you have all of this discovery. Yes, I believe so judge. Yes",
+  "hot_lines": []
+ },
+ {
+  "n": 27,
+  "start": 3134.9,
+  "end": 3223.2,
+  "minutes": 1.5,
+  "words": 196,
+  "heat": 0,
+  "opening": "Okay, people versus derrick mcguire Okay Okay, so they can hear us And all right, mr. McGuire, can you state your name, sir?",
+  "hot_lines": []
+ },
+ {
+  "n": 28,
+  "start": 3223.2,
+  "end": 3304.8,
+  "minutes": 1.4,
+  "words": 211,
+  "heat": 0,
+  "opening": "Court calls the case people versus adam parrala And the water system prosecuting attorney to the people On behalf of mr parrala, can you please see your name for the record adam dave parrala? We also I forgot to I think include the case number on the green sheet I apologize for that in the that's tr",
+  "hot_lines": []
+ },
+ {
+  "n": 29,
+  "start": 3304.8,
+  "end": 3432.7,
+  "minutes": 2.1,
+  "words": 268,
+  "heat": 3,
+  "opening": "Court calls case people versus Tyrell Rickett I should call this video How about defender fonzo white on behalf of Tyrell Rickett He's approaching the podium. Can you state your name, please? Hi, how are you doing? I'm Tyrell Rickett",
+  "hot_lines": [
+   "[55:34] 9 a.m bond continued",
+   "[56:35] Oh, this is the only thing that's holding her I believe she was intending to post the bond I believe it's only a hundred dollars",
+   "[57:08] Bond continue. Thank you"
+  ]
+ },
+ {
+  "n": 30,
+  "start": 3432.7,
+  "end": 3484.2,
+  "minutes": 0.9,
+  "words": 89,
+  "heat": 1,
+  "opening": "Calls case people versus steven serda No, you know you were good it was him we were waiting on I did not know you were waiting on him Cost a little based on behalf of mr. Steven serda. Can you state your point for the record? Thank you at this time requested",
+  "hot_lines": [
+   "[57:59] Bond continue. Thank you. Your honor"
+  ]
+ },
+ {
+  "n": 31,
+  "start": 3484.2,
+  "end": 3981.3,
+  "minutes": 8.3,
+  "words": 1145,
+  "heat": 21,
+  "opening": "Short calls case people versus tim shelly Your name, sir, tom shelly And my daughter's on behalf of mr. Shelly Um",
+  "hot_lines": [
+   "[58:25] Your honor, um, I believe mr. Shelly had been released from custody on the friday. I tried to reach him",
+   "[58:31] Could not reach him. He ended up back in custody. Um, I believe his 14v case",
+   "[58:58] Yeah, right, um, he did get really he did get a pr bond with a backup he has a one hundred dollar",
+   "[59:08] 1010 bond in this case",
+   "[59:12] Um, i'd ask for a personal recognizance bond your honor, uh, I",
+   "[59:16] believe he posted a bond on",
+   "[59:19] When did you post the bond on the tape? I had a one hundred dollar",
+   "[59:26] personal bond"
+  ]
+ },
+ {
+  "n": 32,
+  "start": 3981.3,
+  "end": 4244.4,
+  "minutes": 4.4,
+  "words": 573,
+  "heat": 6,
+  "opening": "Corcoran's case people versus matthew smith Office for the teaching Morning your honor system public defender lexis erps with an on behalf of smith. We should be appearing by zoom. Mr Smith. Can you state your name, please?",
+  "hot_lines": [
+   "[67:11] And your honor we would like to set this for exam and I would like to address bond if the court would allow",
+   "[67:36] As to bond",
+   "[68:56] And at the time he failed to appear there was a bond violation for him",
+   "[69:11] He also has a whole lot of weighing with bond and I burn assault",
+   "[69:18] He has a whole lot of appear with bond and I for fraud and he has a whole lot of oakland",
+   "[69:22] Her stolen property with bond did not so if this where's our tether"
+  ]
+ },
+ {
+  "n": 33,
+  "start": 4244.4,
+  "end": 4304.7,
+  "minutes": 1.0,
+  "words": 108,
+  "heat": 2,
+  "opening": "The court calls the case people versus laura waldrin Lorenzo that's my dad's name. Um, what'd you say? I said lorenzo There's your client. I spoke with this warden last night. I do expect to hear can you do? Yeah, can we pass it? Yes, I can give her my docket. No",
+  "hot_lines": [
+   "[71:25] Bench warrant will issue for defendants failure to appear",
+   "[71:29] Round is setting the amount of ten thousand dollars cash charity. That warrant will issue immediately"
+  ]
+ },
+ {
+  "n": 34,
+  "start": 4304.7,
+  "end": 4408.3,
+  "minutes": 1.7,
+  "words": 179,
+  "heat": 0,
+  "opening": "Guys people versus kirby snyder two cases What is uh What why Why why who's who's recording",
+  "hot_lines": []
+ },
+ {
+  "n": 35,
+  "start": 4408.3,
+  "end": 4479.7,
+  "minutes": 1.2,
+  "words": 103,
+  "heat": 1,
+  "opening": "For cause case people versus jason perkins Actually, it's for people Your honor miss you've written down on the site He's in one of the what",
+  "hot_lines": [
+   "[74:13] Yell of a green sheet. We are asking for a brief adjournment to continue to the negotiation doesn't matter your names"
+  ]
+ },
+ {
+  "n": 36,
+  "start": 4479.7,
+  "end": 4675.9,
+  "minutes": 3.3,
+  "words": 470,
+  "heat": 4,
+  "opening": "Or cause case of the people versus bunny saint john and keep it off until you get out of my building I just felt this for the people It's always a bender fence. I don't want on behalf of saint john who is standing to my right. Um Your name",
+  "hot_lines": [
+   "[75:33] prosecutor in defense agreed to a sentence of 74 11 if she's eligible",
+   "[75:53] I'm staying jail for a year",
+   "[75:56] No, that's the maximum penalty. Okay. Okay. I don't know what your sentence would be",
+   "[76:17] The form indicates that the prosecutor and defendant have agreed to a deferred sentence"
+  ]
+ },
+ {
+  "n": 37,
+  "start": 4675.9,
+  "end": 4827.8,
+  "minutes": 2.5,
+  "words": 297,
+  "heat": 1,
+  "opening": "What I thought court calls the case people versus joel is it serving off I don't want her assistant prosecuting attorney Who's just that? Was that burned down? Seriously, are you ready with your next person? You got somebody there, but",
+  "hot_lines": [
+   "[80:19] Bond will continue"
+  ]
+ },
+ {
+  "n": 38,
+  "start": 4827.8,
+  "end": 5166.4,
+  "minutes": 5.6,
+  "words": 848,
+  "heat": 4,
+  "opening": "For those case people versus jolz Capital on behalf of mr. Serbanoff Your name, sir Joel Serbanoff your honor",
+  "hot_lines": [
+   "[82:23] I would not be your sentencing judge in this case and you would be sentenced before judge",
+   "[85:17] You would not be entitled to withdraw your plea and the court would not be bound by any sentence evaluation or recommendation you understand that sir",
+   "[85:49] Pre-sentence investigation and report is ordered at 15 district corporation",
+   "[86:02] Next church bond will continue. Thank you"
+  ]
+ },
+ {
+  "n": 39,
+  "start": 5166.4,
+  "end": 5248.4,
+  "minutes": 1.4,
+  "words": 189,
+  "heat": 0,
+  "opening": "And it sounds good court cause case people versus mathy wallace I don't want it to prosecute me attorney Public defender sander right on behalf of matthew wallace Please take connection present",
+  "hot_lines": []
+ },
+ {
+  "n": 40,
+  "start": 5248.4,
+  "end": 5308.1,
+  "minutes": 1.0,
+  "words": 139,
+  "heat": 1,
+  "opening": "Corkhouse case people versus teneris william And on behalf of people Assistant public defender vendela on behalf of mr. Williams Who is joining me at the podium now?",
+  "hot_lines": [
+   "[88:20] Thank you, your honor 9 a.m. Bond continue"
+  ]
+ },
+ {
+  "n": 41,
+  "start": 5308.1,
+  "end": 5889.2,
+  "minutes": 9.7,
+  "words": 1090,
+  "heat": 10,
+  "opening": "Lord that's called the case people state of michigan versus monies. Sue st. John. That's a little bit on behalf of the same John, can you see your full name for the record money? I had before me I had before me a plea form that indicates that the defendant",
+  "hot_lines": [
+   "[89:06] There's a sentence agreement that the defendant would get 74",
+   "[89:57] You also understand ma'am that while i'm taking your plea, I would not be your sentencing judge. We would be sentenced before judge far in the",
+   "[92:47] And the court would not be bound by any sentence evaluation or recommendation. You understand that?",
+   "[93:15] pre-sentence investigation and report is ordered",
+   "[94:03] All right, then may I just bond you may",
+   "[94:06] Then my client is asking for a pr bond at this time while she waits for sentencing",
+   "[94:43] Clean now. Oh, yeah, because you've been in jail. We don't let she do that there, but i'm gonna be taking",
+   "[96:56] Basically was warranted because of her years"
+  ]
+ },
+ {
+  "n": 42,
+  "start": 5889.2,
+  "end": 5982.2,
+  "minutes": 1.5,
+  "words": 217,
+  "heat": 2,
+  "opening": "Court calls the case people versus laura walder I just felt good people. This is a recall This is the recall We were already done with this. We're recalling the case at the request of miss white. I would be done off the bench",
+  "hot_lines": [
+   "[98:36] We asked that the warrant be recalled",
+   "[99:35] 9 a.m bond will continue. Thank you. All right. Thank you"
+  ]
+ }
+]

@@ -1,0 +1,88 @@
+https://en.wikipedia.org/wiki/Grand_juries_in_the_United_States
+Grand juries in the United States
+
+Grand juries in the United States are groups of citizens empowered by United States federal or state law to conduct legal proceedings, chiefly investigating potential criminal conduct and determining whether criminal charges should be brought.
+Like the jury system as a whole, grand juries originated in England and spread throughout the colonies of the British Empire as part of the English common law system. Today, the United States is one of only two jurisdictions, along with Liberia, that continues to use the grand jury to screen criminal indictments. Japan uses a system similar to U.S. grand juries to investigate corruption and other more systemic issues.
+As of 1971, generally speaking, a grand jury may issue an indictment for a crime, also known as a "true bill", only if it determines that those presenting had probable cause to believe that a crime has been committed by a criminal suspect.
+Unlike a petit jury, which resolves a particular civil or criminal case, a grand jury (typically having twelve to twenty-three members) serves for a sustained period of time in all or many of the cases that come up in the jurisdiction, generally under the supervision of a federal U.S. attorney, a county district attorney, or a state attorney-general, and hears evidence ex parte (i.e. without suspect or person of interest involvement in the proceedings).
+
+The federal government is required to use grand juries for all felonies, but not misdemeanors, under the Fifth Amendment to the United States Constitution. All states can use them, but only half actually do, with the others using preliminary hearings.
+Some states have "civil grand juries", "investigating grand juries", or the equivalent, to oversee and investigate civil issues instead of criminal ones.
+
+
+== History ==
+In the early decades of the United States grand juries played a major role in public matters. In the late 18th century, colonial civil, criminal and grand juries played major roles in checking the power of the executive, the legislature and the judiciary. In some American colonies (such as in New England and Virginia) and less often in England, juries also handed down rulings on the law in addition to rulings on the facts of the case. The American grand jury was also indispensable to the American Revolution by challenging the Crown and Parliament, including by indicting British soldiers, refusing to indict people who criticized the crown, proposing boycotts and called for the support of the war after the Declaration of Independence. At the time of the founding of the United States, a grand jury indictment was required for almost all prosecutions and juries rendered the final verdict of almost all criminal and civil cases. During that period counties followed the traditional practice of requiring all decisions be made by at least twelve of the grand jurors, (e.g., for a twenty-three-person grand jury, twelve people would constitute a bare majority). Any citizen could bring a matter before a grand jury directly, from a public work that needed repair, to the delinquent conduct of a public official, to a complaint of a crime, and grand juries could conduct their own investigations. In that era most criminal prosecutions were conducted by private parties, either a law enforcement officer, a lawyer hired by a crime victim or their family, or even by laymen. A layman could bring a bill of indictment to the grand jury; if the grand jury found there was sufficient evidence for a trial, that the act was a crime under law, and that the court had jurisdiction, it would return the indictment to the complainant. The grand jury would then appoint the complaining party to exercise the authority of an attorney general, that is, one having a general power of attorney to represent the state in the case. The grand jury served to screen out incompetent or malicious prosecutions. The advent of official public prosecutors in the later decades of the 19th century largely displaced private prosecutions. By the 21st century, the grand jury had lost almost all of its power as a check on other branches of government.
+
+
+== Federal law ==
+
+
+=== Grand Jury Clause ===
+The grand jury right may be waived, including by plea agreement. A valid waiver must be made in open court and after the defendant has been advised of the nature of the charge and of the defendant's rights.
+
+
+=== Federal Rules of Criminal Procedure ===
+Rule 6 of the Federal Rules of Criminal Procedure governs grand juries. It requires grand juries to be composed of 16 to 23 members and that 12 members must concur in an indictment. A grand jury is instructed to return an indictment if the probable cause standard has been met. The grand jury's decision is either a "true bill" (formerly billa vera, resulting in an indictment), or "no true bill".
+Rule 7 requires that the information (accusation) presented, by a competent public officer on their oath of office, must be a plain, concise, and definite written statement of the essential facts constituting the offense charged, and must give the official or customary citation of the statute, rule, regulation, or other provision of law that the defendant is alleged to have violated. If the grand jury returns an indictment, it must satisfy the same criteria.
+
+
+=== Investigatory role ===
+A grand jury's constitutional role is to prevent prosecutorial misconduct, verifying that the presented information (accusation) is sufficient evidence to pursue a prosecution. To achieve this, a grand jury is given investigative powers such as being able to issue subpoenas and compel witnesses to testify without a lawyer present. In practice, a grand jury is sometimes used to extend rather than restrict prosecutorial power, when prosecutors may not have enough evidence to pursue a prosecution and want to see whether a grand jury can secure sufficient evidence.
+Courts have emphasized that the grand jury's role is not merely to approve prosecutorial requests. As one federal district court stated in 2025, “the purpose of a grand jury is to serve as a shield against unjust prosecutions, not as a sword to rubber-stamp criminal charges.” Grand jurors are entitled to question witnesses, request additional evidence or subpoenas, and decline to indict even when prosecutors recommend doing so.
+
+
+=== Special grand jury ===
+
+United States law also provides for the formation of special grand juries. While a regular grand jury primarily decides whether to bring charges, a special grand jury is called into existence to investigate whether organized crime is occurring in the community in which it sits. This could include, for instance, organized drug activity or organized corruption in government. These lengthier cases may have jurors meet for up to three years. As provided in 18 U.S.C. § 3331(a), the U.S. District Court in every judicial district having more than four million inhabitants must impanel a special grand jury at least once every 18 months as well as upon request by a designated official of the Justice Department.
+
+
+== State laws ==
+About half of the states require a grand jury indictment to commence a criminal prosecution according to state legislation. Among these, many limit the requirement to felonies or even certain types of felonies. It has been argued that all states should be required to use Grand Juries per the Constitution, and that jury rights are the only rights from the Bill of Rights that the Supreme Court has not insisted that states must protect.
+The size of the grand jury and the number of grand jurors required to issue an indictment varies among the states and even, at times, within a single state. A supermajority of jurors, such as two-thirds or three-fourths, is usually needed to recommend an indictment or criminal charge.
+
+
+=== California ===
+Annually in each California county a Civil Grand Jury is empaneled. Its function is to investigate the operations of the various officers, departments and agencies of local government. Each Civil Grand Jury determines which officers, departments and agencies it will investigate during its term of office.
+
+
+=== Georgia ===
+In Georgia, grand juries are required in order to issue an indictment in felony cases. They are composed of 16 to 23 people who serve for a fixed term which varies depending on the county. These grand juries hear many different cases during their session. In addition to the criminal functions they carry out, grand juries may also perform civil investigations; they may then issue a report, officially called a general presentment, or in some cases a special presentment.
+Georgia law also provides for the formation of special purpose grand juries. Special purpose grand juries are different from regular grand juries in that they are focused on a single topic, may be empaneled for longer, and most importantly, since Kenerly v. State (311 Ga. App. 190, 2011), may not issue indictments; instead they issue a presentment which usually becomes public.
+
+
+=== Michigan ===
+Michigan has a statutory scheme, enacted in 1917, that quickly became known as the "one-man grand jury" law, allowing a judge to investigate whether probable cause exists to suspect a crime has been committed. The law authorizes a judge to investigate, subpoena witnesses, and issue arrest warrants, but not to issue indictments.
+
+
+== Process ==
+Typically between 16 and 23 grand jurors are drawn at random from lists of registered voters, actual voters, or a similar list (typically the same one that is used for trial jurors). Unlike potential jurors in regular trials, grand jurors are not screened for bias, just for felony status, language proficiency, or other eligibility factors. They typically only appear in court a few days a month and meet in secret to protect jurors from intimidation or smear campaigns, prevent any innocent people from being subjected to unfounded charges, not to tip-off targets of an investigation who may be a flight risk, reduce the likelihood of witness tampering before a future trial, and encourage witnesses to be more forthcoming. Witnesses can typically reveal what occurred when they testified.
+They are rarely read any instruction on the law, as this is not a requirement; their job is only to judge on what the prosecutor produced. The prosecutor drafts the charges and decides which witnesses to call. Individuals in grand jury proceedings can be charged with holding the court in contempt (punishable with incarceration for the remaining term of the grand jury) if they refuse to appear before the jury.
+
+
+== Assessment ==
+Former Arizona prosecutor Paul Charlton described grand juries as taking on a more independent and hands-on approach in newsworthy or politically sensitive probes like those involving public corruption, while generally letting the prosecutors lead on cases like bank robberies.
+Some criticize the process as being too likely to reach an indictment and that the District Attorney usually directs the investigation and that prosecutors are allowed to withhold evidence favorable to the defendant. Others argue that defendants should be allowed to have a lawyer present, that secrecy reduces the accountability and transparency into the process, including for grand jurors who may want to respond to commentary after submitting their decision. Also, the grand juries may not be representative of the community and tend to be made up of older, more educated and wealthier citizens, though some counties use regular jury rolls for grand juries.
+One commentator argues that juries (including grand juries) were intended by the founders as a co-equal check on the other branches of government such as the executive branch (prosecutors), the judicial branch (judges), the legislature and states, but that these other branches of government had taken almost all of the jury's power by the 21st century. They further argue that juries are more impartial than judges and other decision-makers because they are free from political or status incentives to rule a certain way.
+Historically, grand jury refusals to indict (known as "no-bills") have been exceptionally rare in the federal system. Court data showed that in fiscal year 2010, approximately 11 of roughly 162,000 proposed federal indictments resulted in no-bills; in fiscal year 2013, the figure was approximately 5 out of more than 165,000.
+Beginning in late 2025, legal observers documented a marked increase in no-bill decisions in federal cases, particularly in cases arising from protest-related activity, prompting renewed scholarly and public attention to the grand jury's independent gatekeeping function.
+Even an indictment that does not result in conviction can carry significant consequences for the accused, including substantial legal defense costs and lasting damage to professional reputation. As the Supreme Court has recognized, because courts treat the grand jury's probable cause determination as effectively unreviewable, the decision to indict is rarely undone before trial — making the grand jury's gatekeeping role all the more consequential in practice.
+
+
+== See also ==
+Citizens' assembly – Randomly selected people to deliberate on public issues
+
+
+== References ==
+
+
+== External links ==
+
+
+=== Handbooks ===
+U.S. Federal Grand Jury Handbook (PDF)
+California Grand Jurors' Association – Supports and promotes California's Civil Grand Jury system
+
+
+=== Other ===
+"FAQs about the Grand Jury System". American Bar Association. March 24, 2010. Archived from the original on 2011-04-24.
+1995 Article by Susan Brenner in Virginia Law Review on the history of grand juries in the United States

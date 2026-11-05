@@ -1,0 +1,36 @@
+{
+ "name": "Focus Commentary (Verdictly style)",
+ "best_for": "2 cameras; narrator bolta hai to ek camera FULL SCREEN zoom-in + COMMENTARY tag.",
+ "layout": "strip",
+ "frame": {
+  "style": "outer",
+  "color": "#FFFFFF",
+  "thickness": 4
+ },
+ "divider": {
+  "color": "#FFFFFF"
+ },
+ "cam_w": 900,
+ "gap": 6,
+ "vo_style": "focus",
+ "vo_focus_tile": 1,
+ "vo_tag": "COMMENTARY",
+ "tag_color": "#FFD000",
+ "caption": {
+  "style": "karaoke",
+  "position": "on",
+  "font": "Arial Black",
+  "size": 54,
+  "color": "#FFFFFF",
+  "highlight": "#FFD000",
+  "outline": "#000000",
+  "outline_w": 4,
+  "shadow": 3,
+  "upper": true,
+  "max_words": 4,
+  "band": 170,
+  "box_color": "#000000",
+  "box_pad": 14
+ },
+ "bg": "bg.jpg"
+}
