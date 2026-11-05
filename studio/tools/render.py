@@ -11,7 +11,7 @@ tags) are burned in with ASS subtitles.
 """
 import argparse, os, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(__file__))
-from common import proj_dir, load_json, load_template, h264_args, FPS, W, H
+from common import proj_dir, load_json, load_template, h264_args, filt_path, cat_path, FPS, W, H
 
 ap = argparse.ArgumentParser()
 ap.add_argument('project'); ap.add_argument('--template', default='T01')
@@ -154,7 +154,7 @@ if a.still is not None:
     ms0 = int(a.still * 1000)
     write_ass(assp, lo=ms0, still=True)
     out = a.out or os.path.join(d, f'preview_{tid}.jpg')
-    subprocess.run(FF + ['-i', tmp, '-vf', f'ass={assp}', '-frames:v', '1', '-q:v', '3', out], check=True)
+    subprocess.run(FF + ['-i', tmp, '-vf', f'ass={filt_path(assp)}', '-frames:v', '1', '-q:v', '3', out], check=True)
     os.remove(tmp); os.remove(assp)
     print('saved', out); sys.exit()
 
@@ -168,7 +168,7 @@ for i, fr in enumerate(order):
     if not os.path.exists(out):
         subprocess.run(compose_cmd(fr, n, out), check=True)
     print(f'  video {i + 1}/{len(order)}', flush=True)
-open(os.path.join(seg, 'list.txt'), 'w').write(''.join(f"file '{p}'\n" for p in lst))
+open(os.path.join(seg, 'list.txt'), 'w').write(''.join(f"file '{cat_path(p)}'\n" for p in lst))
 vonly = os.path.join(seg, 'video.mp4')
 subprocess.run(FF + ['-f', 'concat', '-safe', '0', '-i', os.path.join(seg, 'list.txt'), '-c', 'copy', vonly], check=True)
 
@@ -192,7 +192,7 @@ print('  audio mixed', flush=True)
 assp = os.path.join(seg, 'text.ass')
 write_ass(assp, hi=int(LIMIT / FPS * 1000))
 final = a.out or os.path.join(d, (f'sample_{tid}.mp4' if a.sample else f'final_{tid}.mp4'))
-subprocess.run(FF + ['-i', vonly, '-i', mix, '-vf', f'ass={assp}', *h264_args('8M'), '-pix_fmt', 'yuv420p',
+subprocess.run(FF + ['-i', vonly, '-i', mix, '-vf', f'ass={filt_path(assp)}', *h264_args('8M'), '-pix_fmt', 'yuv420p',
                      '-c:a', 'aac', '-b:a', '192k', '-shortest', *(['-t', str(a.sample)] if a.sample else []),
                      '-movflags', '+faststart', final], check=True)
 shutil.rmtree(seg)

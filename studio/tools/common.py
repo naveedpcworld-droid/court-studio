@@ -127,3 +127,21 @@ def geom(t):
         cap_bottom = sy - th - 40
     return dict(cams=cams, full=full, boxes_strip=bs, boxes_full=bf, cap_bottom=cap_bottom,
                 cap_margin=sx, strip=(sx, sy, sw, ch))
+
+
+def filt_path(p):
+    """path usable inside an ffmpeg filter argument (Windows: C:\\x -> C\\:/x)."""
+    p = os.path.abspath(p).replace('\\', '/')
+    return "'" + p.replace(':', '\\:').replace("'", "\\'") + "'"
+
+
+def cat_path(p):
+    """path for an ffmpeg concat list file (forward slashes, quotes escaped)."""
+    return os.path.abspath(p).replace('\\', '/').replace("'", "'\\''")
+
+
+def tool_cmd(name, module=None):
+    """CLI that may only exist as a python module (Windows PATH issues): yt-dlp, edge-tts."""
+    import shutil
+    exe = shutil.which(name)
+    return [exe] if exe else [sys.executable, '-m', module or name.replace('-', '_')]

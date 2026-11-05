@@ -113,10 +113,13 @@ def holder_up():
 def ensure_holder():
     if not os.path.isdir(os.path.join(TOOL, 'node_modules')):
         print('installing thumbnail tool (npm install) ...', flush=True)
-        subprocess.run(['npm', 'install', '--silent'], cwd=TOOL, check=True)
+        import shutil
+        npm = shutil.which('npm') or shutil.which('npm.cmd') or 'npm'
+        subprocess.run([npm, 'install', '--silent'], cwd=TOOL, check=True)
     if holder_up(): return
     print('opening the ChatGPT window (thumbnail-gpt/open.js) ...', flush=True)
-    subprocess.Popen(['node', 'open.js'], cwd=TOOL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True)
+    kw = dict(creationflags=0x00000008 | 0x00000200) if os.name == 'nt' else dict(start_new_session=True)  # detached
+    subprocess.Popen(['node', 'open.js'], cwd=TOOL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, **kw)
     for _ in range(40):
         time.sleep(1)
         if holder_up(): time.sleep(4); return

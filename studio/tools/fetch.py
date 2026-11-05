@@ -10,7 +10,7 @@ use --model base.en to go ~2x faster.
 """
 import argparse, json, os, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(__file__))
-from common import proj_dir, dur, save_json
+from common import proj_dir, dur, save_json, tool_cmd
 
 ap = argparse.ArgumentParser()
 ap.add_argument('project'); ap.add_argument('source')
@@ -22,12 +22,12 @@ src = os.path.join(d, 'src_full.mp4')
 
 if not os.path.exists(src):
     if a.source.startswith('http'):
-        meta = subprocess.run(['yt-dlp', '--no-warnings', '--skip-download', '--print',
+        meta = subprocess.run([*tool_cmd('yt-dlp'), '--no-warnings', '--skip-download', '--print',
                                '%(title)s\t%(channel)s\t%(view_count)s\t%(duration)s', a.source],
                               capture_output=True, text=True).stdout.strip()
         open(os.path.join(d, 'source.txt'), 'w').write(a.source + '\n' + meta + '\n')
         sec = ['--download-sections', f'*{a.section[0]:.0f}-{a.section[1]:.0f}', '--force-keyframes-at-cuts'] if a.section else []
-        subprocess.run(['yt-dlp', '-q', '--no-warnings', '-f', 'bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080]/b',
+        subprocess.run([*tool_cmd('yt-dlp'), '-q', '--no-warnings', '-f', 'bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080]/b',
                         '--merge-output-format', 'mp4', *sec, '-o', src, a.source], check=True)
         if a.section:
             open(os.path.join(d, 'source.txt'), 'a').write(f'section {a.section[0]:.0f}-{a.section[1]:.0f} s of the original\n')

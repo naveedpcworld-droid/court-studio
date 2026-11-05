@@ -3,7 +3,7 @@
 
   python3 tools/voice.py <project>                      # provider from script.json / config.env
   python3 tools/voice.py <project> --provider ai33      # override
-  python3 tools/voice.py --test ai33 "Testing one two"  # check a key / voice -> /tmp/voice_test.mp3
+  python3 tools/voice.py --test ai33 "Testing one two"  # check a key / voice -> <temp>/voice_test.mp3
 
 Providers (pick in script.json "voice_provider", or VOICE_PROVIDER in config.env):
   edge        FREE, no key. Microsoft "Brian Multilingual" (= Clipchamp TTS voice). Default.
@@ -15,7 +15,8 @@ Also saves word timings (vo_tx.json) for the captions.
 """
 import argparse, json, os, subprocess, sys, time, urllib.error, urllib.request, uuid
 sys.path.insert(0, os.path.dirname(__file__))
-from common import proj_dir, load_json, save_json, dur, STUDIO
+from common import proj_dir, load_json, save_json, dur, STUDIO, tool_cmd
+import tempfile
 
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
 
@@ -41,7 +42,7 @@ def need(k, prov):
 
 
 def tts_edge(text, out, voice, rate):
-    subprocess.run(['edge-tts', '--voice', voice or 'en-US-BrianMultilingualNeural', '--rate', rate, '--text', text,
+    subprocess.run([*tool_cmd('edge-tts', 'edge_tts'), '--voice', voice or 'en-US-BrianMultilingualNeural', '--rate', rate, '--text', text,
                     '--write-media', out], check=True)
 
 
@@ -97,7 +98,8 @@ ap = argparse.ArgumentParser(); ap.add_argument('project', nargs='?'); ap.add_ar
 ap.add_argument('--test', nargs=2, metavar=('PROVIDER', 'TEXT'))
 a = ap.parse_args()
 if a.test:
-    speak(a.test[0], a.test[1], '/tmp/voice_test.mp3', None, {}); print('ok ->', '/tmp/voice_test.mp3', f'{dur("/tmp/voice_test.mp3"):.1f}s'); sys.exit()
+    tp = os.path.join(tempfile.gettempdir(), 'voice_test.mp3')
+    speak(a.test[0], a.test[1], tp, None, {}); print('ok ->', tp, f'{dur(tp):.1f}s'); sys.exit()
 
 name = a.project
 d = proj_dir(name)

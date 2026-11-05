@@ -16,7 +16,7 @@ Beat types (fields in script.json -> vo[].beats[]):
   broll      {"file"} (video from research.py broll) or {"image"}                  stock footage
 Rendered with PIL frame-by-frame and piped into ffmpeg, so it runs the same on Mac and Windows.
 """
-import math, os, random, subprocess, textwrap
+import math, os, platform, random, subprocess, textwrap
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, ImageOps, ImageEnhance
 
 FPS = 30
@@ -206,7 +206,7 @@ def grain(im, amount=18, seed=0):
 class Writer:
     def __init__(self, out, W, H, dur):
         self.n = max(1, int(round(dur * FPS)))
-        enc = (['-c:v', 'h264_videotoolbox', '-b:v', '10M'] if os.uname().sysname == 'Darwin'
+        enc = (['-c:v', 'h264_videotoolbox', '-b:v', '10M'] if platform.system() == 'Darwin'
                else ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '19'])
         self.p = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}',
                                    '-r', str(FPS), '-i', '-', *enc, '-pix_fmt', 'yuv420p', out], stdin=subprocess.PIPE)
@@ -304,7 +304,7 @@ def render(beat, sk, out, dur, W=1920, H=1080, hl_at=None, assets=None):
         if sk.get('photo_bw'): vf += ',hue=s=0'
         if film: vf += ',noise=alls=12:allf=t'
         if sk.get('letterbox'): vf += f",drawbox=0:0:{W}:{int(H * 0.128)}:black:t=fill,drawbox=0:{H - int(H * 0.128)}:{W}:{int(H * 0.128)}:black:t=fill"
-        enc = (['-c:v', 'h264_videotoolbox', '-b:v', '10M'] if os.uname().sysname == 'Darwin' else ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '19'])
+        enc = (['-c:v', 'h264_videotoolbox', '-b:v', '10M'] if platform.system() == 'Darwin' else ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '19'])
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-stream_loop', '-1', '-i', beat['file'], '-t', f'{dur:.3f}', '-vf', vf, '-r', str(FPS), '-an', *enc, '-pix_fmt', 'yuv420p', out], check=True)
         return
     else:
