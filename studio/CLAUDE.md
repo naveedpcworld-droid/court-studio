@@ -46,6 +46,8 @@ Pehli dafa? Pehle `docs/SETUP.md` ke checks chalao (python3, ffmpeg+libass, yt-d
    | B04 | Law Class | law samjhana main point |
    | B05 | Documentary | serious / emotional case |
 
+   Student **apna template** maange ("captions neeche", "lal frame", "meri photo background") →
+   `tools/new_template.py` (docs/TEMPLATES.md). Built-in T/B kabhi edit mat karo; S01.. banao.
    Student B template chune to **pehle research karo** — poora tareeqa `docs/RESEARCH-BROLL.md` (HARD rules wahan).
 
    Har template har source sambhalta hai: portrait phone video ya ajeeb size wali camera slot mein

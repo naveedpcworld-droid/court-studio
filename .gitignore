@@ -21,3 +21,6 @@ thumbnail-gpt/out/*
 thumbnail-gpt/refs/*
 !thumbnail-gpt/out/.gitkeep
 !thumbnail-gpt/refs/.gitkeep
+
+# students own templates stay local (never clash with git pull)
+studio/templates/S[0-9]*/

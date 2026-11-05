@@ -36,6 +36,8 @@ jagah deti hai, aur narration ke waqt (mode `vo`) layout badal bhi sakti hai.
 Caption styles: **karaoke** = line, bolne wala word highlight · **box** = line ke peeche solid box ·
 **pop** = ek waqt mein ek bara word (bounce ke saath).
 
-Naya template: koi folder copy karo (`T15-my-style`), `template.json` badlo, apna `bg.jpg` daalo, phir
-kisi project pe `build.py --template T15` + `render.py --template T15 --still 60` se dekh lo.
+Naya template (student): `python3 tools/new_template.py "name" --from T02 --set key=value ... [--bg pic.jpg] --project <p>`
+→ `templates/S01-name/` + `preview.jpg` ban jata hai (S = student; git pull se kabhi nahi takrata, gitignored).
+Claude: student jo kahe ("captions neeche", "lal frame", "apni photo background") use `--set` fields mein badlo,
+preview khud dekho, student ko dikhao. Built-in T/B templates kabhi edit mat karo.
 Bilkul naya structure chahiye to `tools/layouts.py` mein nayi family function likho aur `FAMILIES` mein add karo.

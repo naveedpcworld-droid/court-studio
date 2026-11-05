@@ -31,3 +31,21 @@ Phir tumhari copy har 6 ghante khud naye videos add karegi; apne computer pe `gi
 Band karna ho → `AUTO_UPDATE` variable delete kar do. Ye sab sirf tumhari copy pe hota hai.
 
 YouTube GitHub ke servers pe transcripts block kare to `desk/README.md` dekho (Supadata key ya self-hosted runner).
+
+## Naye templates / fixes (teacher ki taraf se)
+Jab original repo mein naye templates (T15, B06...) ya fixes aayein, apne folder mein:
+```bash
+git pull
+```
+ya Claude se kaho *"court-studio update karo"*. Ye bhi tumhari marzi hai — na karo to purana version chalta rahega.
+Tumhare apne templates (`S01-...`), projects aur `config.env` git pull se kabhi nahi badalte.
+Agar tumne T/B template ki file khud badli thi aur pull conflict de → Claude se kaho "conflict theek karo",
+ya behtar: apna badla hua version `new_template.py` se S-template bana lo.
+
+## Apna template banana
+```bash
+cd studio
+python3 tools/new_template.py "red court" --from T02 --set accent=#E53935 caption.position=below caption.style=box --bg meri_photo.jpg --project <project>
+```
+Ya bas Claude se kaho: *"T02 jaisa template banao lekin lal frame aur captions neeche"*. Naam khud `S01-red-court`
+banta hai, `preview.jpg` banta hai — dekho, pasand aaye to `--template S01` se use karo. Fields ki list: `studio/docs/TEMPLATES.md`.
