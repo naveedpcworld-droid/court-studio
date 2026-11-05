@@ -14,3 +14,10 @@ studio/projects/*/audio.m4a
 studio/projects/*/beats/
 studio/projects/*/_seg_*/
 studio/projects/*/final_*.mp4
+thumbnail-gpt/browser
+thumbnail-gpt/config.json
+thumbnail-gpt/node_modules
+thumbnail-gpt/out/*
+thumbnail-gpt/refs/*
+!thumbnail-gpt/out/.gitkeep
+!thumbnail-gpt/refs/.gitkeep

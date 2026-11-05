@@ -156,6 +156,12 @@ def court_words(t, a0, b0):
             if a0 <= w0 < b0: caps.append((t + w0 - a0, t + min(w1, b0) - a0, w.strip()))
 
 skips = [tuple(x) for x in S.get('skip', [])]
+if S.get('keep'):                                   # main points only: everything outside "keep" ranges is cut
+    k_ = sorted(tuple(x) for x in S['keep']); h0_, h1_ = S['hearing']; prev = h0_
+    for ka, kb in k_:
+        if ka > prev: skips.append((prev, ka))
+        prev = max(prev, kb)
+    if prev < h1_: skips.append((prev, h1_))
 thr = S.get('auto_trim', 2.5)
 if thr:
     ws = [w for s in TX for w in s['w']]
@@ -264,7 +270,11 @@ vos = S['vo']
 hook = next((v for v in vos if v['id'] == 'hook'), None)
 outro = next((v for v in vos if v['id'] == 'outro'), None)
 mids = sorted([v for v in vos if 'at' in v and v['id'] not in ('hook', 'outro')], key=lambda v: v['at'])
-if S.get('cold_open'): clip(*S['cold_open'], tag=T.get('cold_tag'))
+HL = [tuple(x) for x in S.get('highlights', [])] or ([tuple(S['cold_open'])] if S.get('cold_open') else [])
+_saved = skips; skips = []                          # highlights are played whole
+for i, (ha, hb) in enumerate(HL):                    # hook montage: 2-4 hottest moments back to back
+    clip(ha, hb, tag=T.get('cold_tag') if i == 0 else None)
+skips = _saved
 if hook: narration(hook, hook['broll'] + dur(os.path.join(d, 'vo', 'hook.mp3')) * 0.5)
 h0, h1 = S['hearing']
 cuts = [h0] + [v['at'] for v in mids] + [h1]

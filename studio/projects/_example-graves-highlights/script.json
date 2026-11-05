@@ -1,0 +1,92 @@
+{
+ "title": "Prosecutor Tries to DROP a Sovereign Citizen's Case... Judge Perkins Says NO!",
+ "voice_provider": "edge",
+ "voice": "en-US-BrianMultilingualNeural",
+ "info": {
+  "case_title": "City of Detroit v. Destiny Graves",
+  "court": "36th District Court, Detroit, Michigan",
+  "charge": "Driving without a valid license",
+  "judge": "Judge Sean Perkins"
+ },
+ "highlights": [
+  [
+   540.1,
+   549.0
+  ],
+  [
+   619.8,
+   633.7
+  ],
+  [
+   783.1,
+   796.0
+  ]
+ ],
+ "hearing": [
+  17.8,
+  1258.0
+ ],
+ "keep": [
+  [
+   65.1,
+   121.0
+  ],
+  [
+   206.7,
+   236.8
+  ],
+  [
+   302.8,
+   331.4
+  ],
+  [
+   355.8,
+   472.2
+  ],
+  [
+   473.4,
+   723.4
+  ],
+  [
+   777.9,
+   893.0
+  ],
+  [
+   1177.0,
+   1229.0
+  ]
+ ],
+ "auto_trim": 2.0,
+ "vo": [
+  {
+   "id": "hook",
+   "broll": 600.0,
+   "text": "The prosecutor agreed to drop every charge against this woman. Her lawyer agreed. The case was basically over. But Judge Sean Perkins had seen this argument too many times, and when she told the court she was a living person, not a corporate fiction, he refused to let the case go away. What he forced instead is something you almost never see. Let's get into it."
+  },
+  {
+   "id": "p1",
+   "at": 236.8,
+   "text": "So here's the setup. This is Detroit's thirty sixth District Court, and the defendant, Destiny Graves, was charged with driving without a valid license, plus registration and insurance tickets. Her trial is set for tomorrow, and the prosecutor has agreed to dismiss everything. But before she even appears, Judge Perkins makes it clear what's bothering him. Everyone else has to take a deal, and people making sovereign citizen arguments walk out with nothing. Watch what happens when her lawyer asks for the dismissal on the record."
+  },
+  {
+   "id": "p2",
+   "at": 472.2,
+   "text": "That almost never happens. Normally, if the prosecutor wants to drop a case, the judge signs off. But here, the license charge would be dismissed on prosecutorial discretion, and Judge Perkins says no. His reason is fairness. Other drivers without a valid license have to go and get one, or take a plea. In his eyes, letting this case vanish rewards the argument instead of the fix. Now her lawyer gives her a chance to explain herself, and this is where it gets strange."
+  },
+  {
+   "id": "p3",
+   "at": 633.7,
+   "text": "Let's translate that. An abatement is a request to end a case because of a defect. A misnomer means the wrong name. Her claim is that the case names a corporate fiction instead of her, the natural person. That's a classic sovereign citizen idea, that the government created a separate legal person using your name, and that you can step outside the law by separating yourself from it. Courts across the country have rejected it again and again. And Judge Perkins is about to explain exactly why."
+  },
+  {
+   "id": "p4",
+   "at": 893.0,
+   "text": "That is the whole case in one exchange. She asks for evidence that the court has jurisdiction over her living person. The judge's answer is simple. You were pulled over in Detroit, you got a ticket, you came to court. That's jurisdiction. The only argument he'd hear is that she wasn't in Detroit at all, and she already admitted she was. So instead of a free dismissal, she now gets exactly what she says she wants, a jury of her peers. And the judge isn't done talking about it."
+  },
+  {
+   "id": "outro",
+   "broll": 1240.0,
+   "text": "So the prosecutor wanted this case gone, and the judge would not allow it. Destiny Graves now has two choices, a plea deal she would accept, or a jury trial, and as of this hearing it was set for the very next day. The registration and insurance were in order, but without a valid driver's license, Judge Perkins wasn't going to let a sovereign citizen argument become a shortcut. Was the judge right to block a dismissal both lawyers agreed on? Let me know in the comments."
+  }
+ ]
+}

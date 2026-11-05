@@ -70,6 +70,10 @@ python3 tools/build.py   <name> --template T05 --dry     # final length check ->
 python3 tools/build.py   <name> --template T05
 python3 tools/render.py  <name> --template T05 --still 60  # ek frame dekh lo (preview_T05.jpg)
 python3 tools/render.py  <name> --template T05          # -> projects/<name>/final_T05.mp4
+python3 tools/thumbnail.py <name> frames                # chehron wale frames -> thumbs/sheet.jpg (KHUD dekho)
+python3 tools/thumbnail.py <name> frames --at 520 615   # jab defendant bolta hai us waqt ke frames
+python3 tools/thumbnail.py <name> make --left thumbs/frames/c0_04.jpg --right thumbs/frames/c0_09.jpg \
+        --text "CORPORATE FICTION?!" --highlight "FICTION?!" --sub "JUDGE SAYS NO"   # ChatGPT -> thumbs/thumb_1.jpg
 ```
 Lambi commands (fetch on long video, render) background mein chalao.
 
@@ -91,6 +95,24 @@ Docket call na mile (sirf 1 case) to `--all`. Ghalat boundary ho to `--range sta
 - **Chhoti** aa rahi hai → zyada commentary blocks (har ~2 min hearing pe ek) aur thore lambe paragraphs
   (max ~110 words). Hearing jitni hai utni hi rahegi — bharti na karo.
 - ±1 min theek hai.
+
+## 4b. Voice (narrator) — student ki marzi
+Default **edge** = FREE (Brian Multilingual, koi key nahi). Behtar/apni awaaz chahiye to `config.env` mein:
+`VOICE_PROVIDER=ai33` + `AI33_KEY` + `AI33_VOICE` (ai33.pro, ElevenLabs voices sasti) ya
+`VOICE_PROVIDER=elevenlabs` + `ELEVENLABS_KEY` + `ELEVENLABS_VOICE`. Test: `python3 tools/voice.py --test ai33 "hello"`.
+
+## 4c. Thumbnail (ChatGPT, student ka apna account) — har video ke saath
+1. `thumbnail.py <name> frames` → `thumbs/sheet.jpg` **khud dekho**: judge ka sakht/react chehra + defendant ka
+   bolta/hairaan chehra (aankhein khuli). Zoom speaker-view mein defendant tab dikhta hai jab woh bolta hai →
+   transcript se uske time lo aur `--at` se frames nikaalo.
+2. Text = **2-5 lafz**, competitor style slang/quote: defendant ka apna ajeeb lafz ("CORPORATE FICTION?!",
+   "NO NAME?!", "I DO NOT CONSENT"), ya natija ("INSTANT REGRET", "WRONG JUDGE", "BRO REALLY SAID THAT 💀").
+   `--highlight` = yellow lafz, `--sub` = chhota red label (faisla). Jhoota claim nahi.
+3. `make` ChatGPT ko dono photos **attach** karke bhejta hai (photos attach na hon to send hi nahi karta),
+   ChatGPT chehre upscale + typography karta hai → `thumbs/thumb_N.jpg` 1920x1080.
+4. Result **khud dekho**: wohi log? spelling sahi? arrow sahi chehre pe? Ghalat → `thumbnail.py <name> fix "..."`.
+Pehli dafa: `cd ../thumbnail-gpt && npm install && node open.js` → student us window mein ChatGPT login kare
+(image generation wala account). Window khud khulti hai — student ka apna Chrome nahi.
 
 ## 5. Video ke baad — upload pack (zaroor do)
 `projects/<name>/upload.md` banao — `docs/TITLES-SEO.md` ke formulas se:

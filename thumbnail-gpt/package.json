@@ -1,0 +1,12 @@
+{
+  "name": "thumbnail-tool-chatgpt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ChatGPT se chat mein 16:9 thumbnail — @thumbnail-gpt",
+  "scripts": {
+    "open": "node open.js"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}

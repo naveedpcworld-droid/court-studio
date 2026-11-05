@@ -24,7 +24,9 @@
 |---|---|
 | `cold_open` | sab se garam 15-30 sec (defendant ki badtameezi / judge ka jawab). Real audio ke saath sab se pehle chalta hai. Ending (faisla) **kabhi** cold open mein mat do. |
 | `hearing` | case kahan se kahan tak (docket call se faisle tak). Uploader ka intro/outro bahar. |
+| `highlights` | **hook montage** (cold_open ki jagah): `[[a,b],[a,b],[a,b]]` — 2-4 sab se garam lamhe, har ek 4-10 sec, kul 15-30 sec, real audio, ek ke baad ek. Faisla/ending kabhi nahi. |
 | `skip` | hearing ke bore hisse jo poore kaatne hain (length kam karne ke liye). |
+| `keep` | **lambi hearing ko chhota karna**: `[[a,b],...]` = sirf ye hisse rakho (main points), baqi sab kat jata hai. `skip` se aasan jab 40-60% katna ho. |
 | `auto_trim` | is se lambi khamoshi khud kat jati hai (seconds). 0 = off. |
 | `hook` | cold open ke baad narrator. `broll` = kis second ki footage neeche slow chale (koi aisa lamha jismein defendant dikhe). |
 | `p1, p2...` | commentary blocks. `at` = hearing ka woh second jahan hearing rok ke ye bolna hai — **kisi sentence ke khatam hone pe** (transcript line ka start time lo). Neeche usse pehle ki footage 0.5x chalti hai. |
@@ -48,6 +50,19 @@ common sense, 1-2 lines) + aage kya hone wala hai ka tease. Kabhi kabhi viewer s
 
 **Outro (70-100 words):** faisla saaf saaf (kya mila, kitna, kab) + 1 line verdict/opinion + comment ka sawal
 ("Was the judge right...? Let me know in the comments.").
+
+## Pacing — voice kitni, commentary kitni (competitors se naapa)
+| | Rule |
+|---|---|
+| Final length | hearing 20 min se lambi → **10-15 min** final. Hearing 5-10 min → jitni hai (+narration). |
+| Hook | highlights 15-30 sec → narrator hook 20-30 sec (60-80 words) → "Let's get into it." Pehle 60 sec mein viewer ko conflict + sawal mil jaye. |
+| Narration share | **25-40%** of final video (Verdictly/CourtroomAlice ~25-30%, Audit the Court ~43%). Is se kam = sirf re-upload lagta hai; zyada = log court dekhne aaye hain. |
+| Commentary block | har **2-3 min** court ke baad ek, 25-40 sec (70-110 words). Research/B-roll templates mein 60-100 sec tak. |
+| Court clips | ek clip 1-4 min, kabhi 5+ min bina rukay nahi. |
+| Kya katna | case numbers padhna, scheduling, "unmute yourself", doosre logon ke cases, khamoshi, breakout room. |
+| Kya rakhna | defendant ka claim, judge ka sawal/jawab, conflict ka peak, faisla, judge ka aakhri lecture. |
+| Outro | faisla saaf + 1 line sabaq + comment ka sawal, 25-35 sec. |
+`build.py --dry` length batata hai; narration % = (hook+blocks+outro seconds) / final.
 
 ## Kitne blocks?
 Har **2-3 min** hearing pe 1 block. 8-10 min video ≈ hook + 3 blocks + outro. 15 min ≈ hook + 5 + outro.
