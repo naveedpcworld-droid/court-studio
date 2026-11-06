@@ -85,10 +85,13 @@ def sync_library(force=False):
         man = json.load(_post_raw('/library', dict(who, file='manifest.json')))
     except urllib.error.HTTPError as e:
         sys.exit(f'❌ library download refused ({e.code}). License check karo: python3 tools/license.py status')
-    vf = os.path.join(ROOT, 'library', '.version')
-    have = open(vf).read().strip() if os.path.exists(vf) else ''
-    todo = [f for f in man['files'] if force or have != man['version'] or not os.path.exists(os.path.join(ROOT, f['path']))]
-    if not todo: return
+    vf = os.path.join(ROOT, 'library', '.files.json')         # sha of every file we already have
+    try: have = json.load(open(vf))
+    except Exception: have = {}
+    todo = [f for f in man['files'] if force or have.get(f['path']) != f['sha256']
+            or (not f.get('unpack') and not os.path.exists(os.path.join(ROOT, f['path'])))]
+    if not todo:
+        return
     total = sum(f['size'] for f in todo); done = 0
     print(f'📥 library download: {len(todo)} files, {total / 1e6:.0f} MB (sirf links + transcripts, ek dafa) ...', flush=True)
     for f in todo:
@@ -113,8 +116,8 @@ def sync_library(force=False):
                 try: t.extractall(ROOT, filter='data')
                 except TypeError: t.extractall(ROOT)
             os.remove(dst)
+        have[f['path']] = f['sha256']; os.makedirs(os.path.dirname(vf), exist_ok=True); json.dump(have, open(vf, 'w'))
         print(f'   {done * 100 // total:3d}%  {f["path"]}', flush=True)
-    open(vf, 'w').write(man['version'])
     print('✅ library ready.')
 
 
@@ -136,6 +139,9 @@ def require():
     if not r.get('ok'):
         sys.exit('❌ ' + r.get('error', 'license refused'))
     d['ok_at'] = time.time(); _save(d)
+    try: sync_library()                                  # autopilot: new transcripts/videos from the teacher's server
+    except SystemExit: pass
+    except Exception: pass
 
 
 if __name__ == '__main__':

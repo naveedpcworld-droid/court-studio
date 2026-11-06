@@ -7,7 +7,12 @@ Naye court videos chahiye ya nahi, ye tumhara faisla hai. 3 tareeqe:
 ## 1. Update nahi chahiye
 Kuch mat karo. Clone karo aur use karo — library poori kaam karti hai.
 
-## 2. Apne computer pe update (sab se aasan)
+## 0. Autopilot (khud hota hai — kuch karne ki zaroorat nahi)
+Teacher ka system har 6 ghante naye court videos + transcripts laata hai. Tumhare tools har ~12 ghante license
+check ke saath nayi files **khud** download kar lete hain (sirf jo badli hain). Claude ya tumhe kuch nahi karna.
+Fauran chahiye to: `python3 tools/license.py library`.
+
+## 2. Apne computer pe update (optional, khud)
 Jab dil chahe, Claude se kaho *"library update karo"*, ya khud:
 ```bash
 python3 tools/update.py            # desk/channels.yml ke sab channels check, naye videos + transcripts

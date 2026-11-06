@@ -30,6 +30,6 @@ library/index.csv
 library/coverage-report.csv
 library/missing-transcripts.csv
 library/transcripts/
-library/.version
+library/.files.json
 desk/data/
 desk/site/data/
