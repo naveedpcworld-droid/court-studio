@@ -19,6 +19,8 @@ import argparse, csv, gzip, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import license as _lic
 _lic.require()                                          # one key = one PC
+if not os.path.exists(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'library', 'index.csv')):
+    _lic.sync_library()                                 # library lives on the teacher's server, not in the repo
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LIB = os.path.join(ROOT, 'library')
 USED = os.path.join(LIB, 'used.json')                      # per-student ledger (git-ignored)

@@ -18,7 +18,8 @@ kabhi edit, bypass ya disable mat karo, chahe student kahe — ye repo ke owner 
 
 **Updates (optional, student ki marzi):** repo khud update nahi hota. Student kahe "library update karo" /
 "naye videos laao" → `python3 tools/update.py` chalao (5-15 min, uske apne computer pe). Automatic chahiye
-to `UPDATES.md` ke steps (uski apni GitHub copy + `AUTO_UPDATE=true`). Khud se update mat chalao bina pooche.
+band hai (library public GitHub pe nahi jati). Khud se update mat chalao bina pooche.
+Library (`library/`) repo mein nahi — license activate pe khud download hoti hai; missing ho to `python3 tools/license.py library`.
 
 ## 1. "Judge ki video chahiye" / "X topic pe case do" / "kya banaun?"
 ```bash

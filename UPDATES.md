@@ -1,6 +1,6 @@
 # Updates — apni marzi (optional)
 
-Ye repo ek **snapshot** hai: 10,981 recordings ki library + desk ke naye videos (jab repo banaya gaya).
+Library (10,981 recordings ke links + transcripts) license key ke saath teacher ke server se aati hai.
 Original repo khud kabhi update nahi hota — **koi automatic cheez original GitHub pe nahi chalti.**
 Naye court videos chahiye ya nahi, ye tumhara faisla hai. 3 tareeqe:
 
@@ -17,20 +17,13 @@ python3 tools/update.py --max-new 20
 - Apne ghar ke internet se chalta hai (YouTube GitHub servers ko kabhi kabhi block karta hai, ghar ko nahi).
 - Naya channel add karna ho: `desk/channels.yml` mein ek entry (format wahin likha hai).
 
-## 3. Apni GitHub pe automatic (har 6 ghante)
-1. GitHub pe **Fork** dabao (ya apni nayi repo bana ke ye folder push karo) — ab ye TUMHARI copy hai.
-2. Apni copy mein: **Settings → Actions → General** → Actions allow karo, aur
-   "Workflow permissions" = **Read and write**.
-3. **Settings → Secrets and variables → Actions → Variables** → New variable:
-   `AUTO_UPDATE` = `true`
-4. (optional) student website bhi chahiye: variable `PUBLISH_SITE` = `true` aur
-   **Settings → Pages → Source: GitHub Actions**.
-5. **Actions** tab → "Update court transcript desk" → **Run workflow** (pehli dafa haath se).
+## 3. Apni GitHub pe automatic — band hai
+Library ab public GitHub pe nahi rakhi jati (sirf license key wale download kar sakte hain), is liye GitHub
+Actions wala auto-update hata diya gaya hai. Updates sirf apne computer pe (upar wala tareeqa 2).
 
-Phir tumhari copy har 6 ghante khud naye videos add karegi; apne computer pe `git pull` se le lo.
-Band karna ho → `AUTO_UPDATE` variable delete kar do. Ye sab sirf tumhari copy pe hota hai.
-
-YouTube GitHub ke servers pe transcripts block kare to `desk/README.md` dekho (Supadata key ya self-hosted runner).
+## Library khud (links + transcripts)
+Repo mein library nahi hoti. License activate karte hi khud download hoti hai (~160 MB, ek dafa).
+Teacher nayi library daale to: `python3 tools/license.py library` (sirf nayi files aati hain).
 
 ## Naye templates / fixes (teacher ki taraf se)
 Jab original repo mein naye templates (T15, B06...) ya fixes aayein, apne folder mein:

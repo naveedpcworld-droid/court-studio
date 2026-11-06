@@ -28,8 +28,8 @@ Courtroom commentary YouTube niche — **ek repo mein sab kuch**:
 4. Claude case dhoondta hai, sirf zaroori hissa download karta hai, script + voice + editing karta hai, aur
    title/description/tags deta hai.
 
-**Updates optional hain** — repo ek snapshot hai, khud update nahi hota. Naye court videos chahiye to
-apne computer pe `python3 tools/update.py`, ya apni GitHub copy pe automatic. Poora tareeqa: [UPDATES.md](UPDATES.md).
+**Library** (10,981 court recordings ke links + transcripts) repo mein nahi — key activate karte hi khud download hoti hai.
+**Updates optional hain:** naye court videos chahiye to apne computer pe `python3 tools/update.py`. Poora tareeqa: [UPDATES.md](UPDATES.md).
 
 Setup: `studio/docs/SETUP.md` (python3, ffmpeg, yt-dlp, faster-whisper, edge-tts). Research templates (B01–B05)
 ke liye apni free keys `studio/config.env` mein (`config.env.example` dekho).

@@ -3,6 +3,7 @@
 
   python3 tools/license.py activate CS-XXXX-XXXX-XXXX     # pehli dafa (is PC se jud jati hai)
   python3 tools/license.py status
+  python3 tools/license.py library      # library (links + transcripts) dobara download / update
 
 Key ke baghair library search aur studio ke tools nahi chalte. Doosre PC pe wahi key = "doosra PC registered hai".
 Naya PC liya → teacher se "reset" karwao, phir yahan activate.
@@ -63,6 +64,58 @@ def activate(key):
     if not r.get('ok'): sys.exit('❌ ' + r.get('error', 'activation failed'))
     _save({'key': key.strip().upper(), 'device': device_id(), 'ok_at': time.time(), 'name': r.get('name', '')})
     print('✅ activated on this PC' + (f" ({r['name']})" if r.get('name') else '') + '. Ab sab tools chalenge.')
+    sync_library()
+
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def _post_raw(path, payload):
+    req = urllib.request.Request(SERVER + path, data=json.dumps(payload).encode(), method='POST',
+                                 headers={'content-type': 'application/json', 'user-agent': 'court-studio/1'})
+    return urllib.request.urlopen(req, timeout=120)
+
+
+def sync_library(force=False):
+    """download links + transcripts library from the teacher's server (only with a valid key on this PC)."""
+    d = _load()
+    if not d.get('key'): sys.exit('🔑 Pehle license activate karo.')
+    who = {'key': d['key'], 'device': device_id()}
+    try:
+        man = json.load(_post_raw('/library', dict(who, file='manifest.json')))
+    except urllib.error.HTTPError as e:
+        sys.exit(f'❌ library download refused ({e.code}). License check karo: python3 tools/license.py status')
+    vf = os.path.join(ROOT, 'library', '.version')
+    have = open(vf).read().strip() if os.path.exists(vf) else ''
+    todo = [f for f in man['files'] if force or have != man['version'] or not os.path.exists(os.path.join(ROOT, f['path']))]
+    if not todo: return
+    total = sum(f['size'] for f in todo); done = 0
+    print(f'📥 library download: {len(todo)} files, {total / 1e6:.0f} MB (sirf links + transcripts, ek dafa) ...', flush=True)
+    for f in todo:
+        dst = os.path.join(ROOT, f['path']); os.makedirs(os.path.dirname(dst) or '.', exist_ok=True)
+        h = hashlib.sha256(); tmp = dst + '.part'
+        for attempt in range(4):
+            try:
+                with _post_raw('/library', dict(who, file=f['obj'])) as r, open(tmp, 'wb') as o:
+                    while True:
+                        b = r.read(1 << 20)
+                        if not b: break
+                        o.write(b); h.update(b)
+                break
+            except Exception as e:
+                h = hashlib.sha256(); time.sleep(3 * (attempt + 1))
+                if attempt == 3: sys.exit(f'❌ download failed: {f["path"]} ({e})')
+        if h.hexdigest() != f['sha256']: sys.exit(f'❌ corrupt download: {f["path"]} — dobara chalao')
+        os.replace(tmp, dst); done += f['size']
+        if f.get('unpack'):
+            import tarfile
+            with tarfile.open(dst) as t:
+                try: t.extractall(ROOT, filter='data')
+                except TypeError: t.extractall(ROOT)
+            os.remove(dst)
+        print(f'   {done * 100 // total:3d}%  {f["path"]}', flush=True)
+    open(vf, 'w').write(man['version'])
+    print('✅ library ready.')
 
 
 def require():
@@ -88,6 +141,7 @@ def require():
 if __name__ == '__main__':
     a = sys.argv[1:]
     if len(a) == 2 and a[0] == 'activate': activate(a[1])
+    elif a[:1] == ['library']: require(); sync_library(force='--force' in a)
     elif a[:1] == ['status']:
         d = _load(); print('key:', d.get('key', '—'), '| this PC:', 'yes' if d.get('device') == device_id() else 'no',
                            '| last ok:', time.ctime(d['ok_at']) if d.get('ok_at') else '—'); require(); print('✅ license ok')

@@ -1,3 +1,6 @@
+> **Note:** ye files ab repo mein nahi hain. `python3 tools/license.py activate <KEY>` ke baad khud download hoti hain
+> (`python3 tools/license.py library` se dobara). Sirf links + transcripts — koi video nahi.
+
 # Library
 
 - `index.csv` — one row per recording: channel, title, url, duration, published, views, `has_transcript`,

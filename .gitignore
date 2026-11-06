@@ -24,3 +24,12 @@ thumbnail-gpt/refs/*
 
 # students own templates stay local (never clash with git pull)
 studio/templates/S[0-9]*/
+
+# library (links + transcripts) lives on the teacher's server — downloaded after license activation
+library/index.csv
+library/coverage-report.csv
+library/missing-transcripts.csv
+library/transcripts/
+library/.version
+desk/data/
+desk/site/data/

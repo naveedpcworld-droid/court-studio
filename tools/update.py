@@ -10,6 +10,9 @@ tools/find_case.py at once. Don't want updates? Just never run this — the libr
 Want it automatic on GitHub instead? See UPDATES.md (your own copy + AUTO_UPDATE variable).
 """
 import argparse, os, subprocess, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import license as _lic
+_lic.require()
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DESK = os.path.join(ROOT, 'desk')
 
