@@ -81,10 +81,14 @@ def sync_library(force=False):
     d = _load()
     if not d.get('key'): sys.exit('🔑 Pehle license activate karo.')
     who = {'key': d['key'], 'device': device_id()}
-    try:
-        man = json.load(_post_raw('/library', dict(who, file='manifest.json')))
-    except urllib.error.HTTPError as e:
-        sys.exit(f'❌ library download refused ({e.code}). License check karo: python3 tools/license.py status')
+    man = None
+    for i in range(8):                                   # fresh activation needs a few seconds to reach every Cloudflare edge
+        try:
+            man = json.load(_post_raw('/library', dict(who, file='manifest.json'))); break
+        except urllib.error.HTTPError as e:
+            if e.code != 403 or i == 7: sys.exit(f'❌ library download refused ({e.code}). License check karo: python3 tools/license.py status')
+            if i == 0: print('⏳ license server se library ki ijazat aa rahi hai ...', flush=True)
+            time.sleep(8)
     vf = os.path.join(ROOT, 'library', '.files.json')         # sha of every file we already have
     try: have = json.load(open(vf))
     except Exception: have = {}
@@ -93,7 +97,9 @@ def sync_library(force=False):
     if not todo:
         return
     total = sum(f['size'] for f in todo); done = 0
-    print(f'📥 library download: {len(todo)} files, {total / 1e6:.0f} MB (sirf links + transcripts, ek dafa) ...', flush=True)
+    first = not have
+    print(f'📥 library {"download" if first else "update (naye court videos)"}: {len(todo)} files, {total / 1e6:.0f} MB'
+          f'{" (sirf links + transcripts, ek dafa)" if first else ""} ...', flush=True)
     for f in todo:
         dst = os.path.join(ROOT, f['path']); os.makedirs(os.path.dirname(dst) or '.', exist_ok=True)
         h = hashlib.sha256(); tmp = dst + '.part'
@@ -106,7 +112,7 @@ def sync_library(force=False):
                         o.write(b); h.update(b)
                 break
             except Exception as e:
-                h = hashlib.sha256(); time.sleep(3 * (attempt + 1))
+                h = hashlib.sha256(); time.sleep(8 * (attempt + 1))
                 if attempt == 3: sys.exit(f'❌ download failed: {f["path"]} ({e})')
         if h.hexdigest() != f['sha256']: sys.exit(f'❌ corrupt download: {f["path"]} — dobara chalao')
         os.replace(tmp, dst); done += f['size']
