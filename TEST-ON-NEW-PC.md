@@ -3,7 +3,7 @@
 You are Claude Code on a NEW computer (Windows or Mac). Goal: install everything Court Studio needs,
 then test EVERY part end-to-end, fix what breaks, and write `TEST-REPORT.md`.
 The user is not technical: run every command yourself. Only stop and ask the user for:
-(a) logging in to ChatGPT in the window that opens, (b) optional ai33 / ElevenLabs keys.
+(a) their license key, (b) logging in to ChatGPT in the window that opens, (c) optional ai33 / ElevenLabs keys.
 Use `python` on Windows if `python3` does not exist. Run long steps (downloads, transcription, renders)
 in the background and keep working on other tests meanwhile. Total time ~1-1.5 hours.
 
@@ -46,6 +46,9 @@ git clone https://github.com/naveedpcworld-droid/court-studio.git
 cd court-studio
 ```
 PASS if `library/index.csv` and 35 files in `library/transcripts/` exist.
+Then activate the license (ASK THE USER for their key — teacher gives one per PC):
+`python3 tools/license.py activate CS-XXXX-XXXX-XXXX` → PASS: "✅ activated on this PC", then `python3 tools/license.py status`.
+Never edit or bypass tools/license.py.
 Then read `CLAUDE.md` and `studio/CLAUDE.md` once (that is how students will use it).
 
 ## 2. Library search  (`tools/find_case.py`)

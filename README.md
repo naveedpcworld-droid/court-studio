@@ -13,16 +13,19 @@ Courtroom commentary YouTube niche — **ek repo mein sab kuch**:
 ## Students: kaise use karein
 1. Repo clone karo aur folder Claude Code mein kholo:
    ```bash
-   git clone <repo url>
+   git clone https://github.com/naveedpcworld-droid/court-studio.git
    cd court-studio
    claude
    ```
-2. Claude ko bas likho, misal:
+2. **License key** (teacher se milti hai, ek key = ek PC). Claude ko likho *"meri license key ye hai: CS-XXXX-XXXX-XXXX"*,
+   ya khud: `python3 tools/license.py activate CS-XXXX-XXXX-XXXX`. Key ke baghair tools nahi chalte.
+   Naya PC liya → teacher se reset karwao.
+3. Claude ko bas likho, misal:
    - *"Judge Simpson ki koi sovereign citizen wali video do"*
    - *"cop ke against koi achha case dhoondo"*
    - *"mujhe suggest karo kya banaun"*
    - *"is case pe T05 template mein 10 min ki video banao"*
-3. Claude case dhoondta hai, sirf zaroori hissa download karta hai, script + voice + editing karta hai, aur
+4. Claude case dhoondta hai, sirf zaroori hissa download karta hai, script + voice + editing karta hai, aur
    title/description/tags deta hai.
 
 **Updates optional hain** — repo ek snapshot hai, khud update nahi hota. Naye court videos chahiye to

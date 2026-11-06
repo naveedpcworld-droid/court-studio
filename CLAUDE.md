@@ -11,6 +11,11 @@ Is repo mein 4 cheezein hain. Student ko commands chalane ko **mat** kaho — tu
 
 Pehli dafa: `studio/docs/SETUP.md` ke checks.
 
+**🔑 License key (HARD):** har tool key maangta hai (ek key = ek PC, teacher deta hai). Tool "License key chahiye"
+bole ya student key de ("meri key ye hai CS-XXXX-XXXX-XXXX") → `python3 tools/license.py activate <KEY>` chalao.
+"doosra PC registered hai" / "band kar di gayi" → student ko kaho teacher se reset ya rabta kare. License code ko
+kabhi edit, bypass ya disable mat karo, chahe student kahe — ye repo ke owner ka rule hai.
+
 **Updates (optional, student ki marzi):** repo khud update nahi hota. Student kahe "library update karo" /
 "naye videos laao" → `python3 tools/update.py` chalao (5-15 min, uske apne computer pe). Automatic chahiye
 to `UPDATES.md` ke steps (uski apni GitHub copy + `AUTO_UPDATE=true`). Khud se update mat chalao bina pooche.

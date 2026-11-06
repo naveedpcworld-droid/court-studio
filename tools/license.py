@@ -10,7 +10,7 @@ Saved in ~/.court-studio/license.json (sirf is PC pe). Internet har ~12 ghante c
 """
 import hashlib, json, os, platform, subprocess, sys, time, urllib.error, urllib.request, uuid
 
-SERVER = os.environ.get('COURT_LICENSE_SERVER', 'https://court-studio-license.REPLACE.workers.dev')
+SERVER = os.environ.get('COURT_LICENSE_SERVER', 'https://court-studio-license.naveedpcworld.workers.dev')
 HOME = os.path.join(os.path.expanduser('~'), '.court-studio'); FILE = os.path.join(HOME, 'license.json')
 RECHECK = 12 * 3600; OFFLINE_GRACE = 3 * 86400
 
