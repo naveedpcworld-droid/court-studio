@@ -54,7 +54,7 @@ common sense, 1-2 lines) + aage kya hone wala hai ka tease. Kabhi kabhi viewer s
 ## Pacing — voice kitni, commentary kitni (competitors se naapa)
 | | Rule |
 |---|---|
-| Final length | hearing 20 min se lambi → **10-15 min** final. Hearing 5-10 min → jitni hai (+narration). |
+| Final length | **Hearing ke hisaab se (HARD, kabhi 8-10 min default nahi):** hearing ≤20 min → poori (+narration) · 30 min → ~25 min · **1 ghanta → kam az kam 40 min** · 1.5 ghanta → ~50 min · **2 ghante → ~1 ghanta** · 3 ghante → ~75 min. Student ne khud length boli ho to wahi (`"target_min"` script.json mein). `build.py --dry` target dikhata hai aur "TOO SHORT" pe ruk kar theek karo. |
 | Hook | highlights 15-30 sec → narrator hook 20-30 sec (60-80 words) → "Let's get into it." Pehle 60 sec mein viewer ko conflict + sawal mil jaye. |
 | Narration share | **25-40%** of final video (Verdictly/CourtroomAlice ~25-30%, Audit the Court ~43%). Is se kam = sirf re-upload lagta hai; zyada = log court dekhne aaye hain. |
 | Commentary block | har **2-3 min** court ke baad ek, 25-40 sec (70-110 words). Research/B-roll templates mein 60-100 sec tak. |
@@ -65,7 +65,8 @@ common sense, 1-2 lines) + aage kya hone wala hai ka tease. Kabhi kabhi viewer s
 `build.py --dry` length batata hai; narration % = (hook+blocks+outro seconds) / final.
 
 ## Kitne blocks?
-Har **2-3 min** hearing pe 1 block. 8-10 min video ≈ hook + 3 blocks + outro. 15 min ≈ hook + 5 + outro.
+Har **2-3 min** hearing pe 1 block. 20 min video ≈ hook + 7 blocks + outro · 40 min ≈ hook + 14 + outro · 60 min ≈ hook + 20 + outro.
+Lambi video mein `keep` sirf asli bore hisse nikaalne ke liye (case numbers, scheduling, khamoshi, doosre cases) — main points ke naam pe 1 ghante ko 10 min mat banao.
 `voice.py` ke baad `build.py --dry` se length dekho aur `skip`/blocks adjust karo.
 
 ## Text badla?

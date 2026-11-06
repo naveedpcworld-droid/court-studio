@@ -59,3 +59,18 @@ Extra fields:
 Legal explainer: 4-5 blocks, 60-100 sec each (hook + law + local process + lawsuit/background + outcome).
 Facts → law → is case pe kaise lagta hai. Har claim ka source research mein ho. Opinion kam, samjhana zyada.
 Outro: anjaam + sabaq + comment sawal.
+
+
+## Auto B-roll (HARD — har B-template video mein)
+Har narration block ke neeche **chalti hui footage** honi chahiye, sirf cards/images nahi:
+1. script.json ke har block (hook, p1.., outro) mein `"broll_q": [2-4 search terms]` likho — jo narration bol rahi hai
+   us ki **jagah aur cheezein** (city skyline, police traffic stop, driver license card, courthouse exterior, jail cell,
+   handcuffs, documents). Logon wale terms kabhi nahi ("sovereign citizen man", "angry judge") — anjaan chehra asli banda lagta hai.
+2. Case ki asli news report ho to project mein `"news_q": "<naam> <shehar> court news"`.
+3. `python3 tools/autobroll.py <project> --news` → har block ko ~har 5 sec ek beat: stock VIDEO (Pexels), hearing ka
+   replay (`court`), photo, news clip ("SOURCE: <channel>" ke saath), collage. Kam az kam aadhe beats chalti footage.
+   Tumhare haath ke doc/article/charge/timeline cards beech mein rehte hain.
+4. **`research/broll_sheet.jpg` khud dekho.** Ghalat jagah, ghalat banda, watermark, logo, TV show, doosra courtroom
+   YouTube channel → woh file delete karo, `--force` se dobara chalao.
+5. News sirf asli news channels se (tool khud filter karta hai — competitor courtroom channels kabhi nahi). Clip max ~15 sec.
+Images ab bhi STILL rehti hain (koi zoom/shake nahi), music nahi — owner rule.

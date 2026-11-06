@@ -16,6 +16,9 @@ so only the needed part is downloaded. Captions here are YouTube auto-captions: 
 and sentences can be misheard — always confirm against the video before stating them as fact.
 """
 import argparse, csv, gzip, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import license as _lic
+_lic.require()                                          # one key = one PC
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LIB = os.path.join(ROOT, 'library')
 USED = os.path.join(LIB, 'used.json')                      # per-student ledger (git-ignored)

@@ -6,6 +6,10 @@ TEMPLATES = os.path.join(STUDIO, 'templates')
 PROJECTS = os.path.join(STUDIO, 'projects')
 W, H, FPS = 1920, 1080, 30
 
+sys.path.insert(0, os.path.join(os.path.dirname(STUDIO), 'tools'))
+import license as _lic                                   # one key = one PC (teacher deta hai)
+_lic.require()
+
 
 def proj_dir(name):
     d = os.path.join(PROJECTS, name)
@@ -145,3 +149,14 @@ def tool_cmd(name, module=None):
     import shutil
     exe = shutil.which(name)
     return [exe] if exe else [sys.executable, '-m', module or name.replace('-', '_')]
+
+
+def target_len(hearing_sec):
+    """Default final length for a hearing (seconds). Owner rule: never shrink a long hearing to 8-10 min.
+    <=20 min -> ~all of it (+narration) | 1 hr -> ~40 min | 2 hr -> ~60-65 min | longer -> ~1 hr + a bit."""
+    m = hearing_sec / 60.0
+    if m <= 20: r = 1.0
+    elif m <= 60: r = 1.0 - (m - 20) / 40 * 0.33          # 20 min -> 100%, 60 min -> 67% (= 40 min)
+    elif m <= 120: r = 0.67 - (m - 60) / 60 * 0.15        # 60 min -> 40 min, 120 min -> 62 min
+    else: return (62 + (m - 120) * 0.25) * 60
+    return m * r * 60

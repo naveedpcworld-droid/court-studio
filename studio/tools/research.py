@@ -16,7 +16,7 @@ PEXELS_API_KEY (pexels.com/api, free). Without keys: wiki + frames still work.
 """
 import json, os, re, subprocess, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(__file__))
-from common import proj_dir, STUDIO
+from common import tool_cmd, proj_dir, STUDIO
 
 UA = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'}
 
@@ -33,6 +33,15 @@ def env():
 
 
 CFG = env()
+# news = real TV/newspaper outlets only (never other courtroom YouTube channels = competitors)
+NEWS_RX = re.compile(r'news|\b(abc|cbs|nbc|fox|cnn|msnbc|pbs|npr|wxyz|wdiv|wjbk|ksdk|kare|wfaa|khou|ktla|kcra|wsb|wral|wtvd|wfla|wptv|'
+                     r'kiro|komo|king ?5|wgn|wkyc|wcnc|wbtv|wsoc|wlky|whas|wwl|kprc|ksat|wbal|wjla|wusa|'
+                     r'tribune|times|post|herald|gazette|journal|courier|chronicle|reuters|associated press|inside edition|court tv)\b', re.I)
+COURT_RX = re.compile(r'court ?cam|court ?watch|gavel|verdict|judge ?reacts|courtroom ?alice|audit|osg|lone ?wolf|'
+                      r'creedence|people ?in ?court|court ?lines|law ?&? ?crime|trial ?world|real ?world ?police|bodycam', re.I)
+# stock watermarks / TV shows / other channels' artwork
+BAD_IMG = re.compile(r'alamy|dreamstime|shutterstock|gettyimages|istockphoto|123rf|depositphotos|adobestock|stock\.adobe|vecteezy|'
+                     r'bigstock|canstock|pond5|a&e|aetv|youtube|ytimg|pinterest|tiktok|facebook|instagram|wallpaper', re.I)
 slug = lambda s: re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')[:50]
 
 
@@ -124,6 +133,7 @@ def main():
             if got >= n: break
             url = it.get('imageUrl', '')
             if it.get('imageWidth', 0) < 700: continue
+            if BAD_IMG.search(url + ' ' + it.get('link', '') + ' ' + it.get('source', '') + ' ' + it.get('title', '')): continue
             try:
                 data = http(url, timeout=20)
                 if len(data) < 40000: continue
@@ -139,22 +149,49 @@ def main():
         print(f'{got} images saved. LOOK at them before using (right place / right person?)')
     elif cmd == 'broll':
         os.makedirs(os.path.join(d, 'broll'), exist_ok=True)
-        key = CFG.get('PEXELS_API_KEY'); done = False
+        key = CFG.get('PEXELS_API_KEY'); got = 0; want = n if '--n' in sys.argv else 3
         if key:
             try:
-                js = json.loads(http(f'https://api.pexels.com/videos/search?query={urllib.parse.quote(q)}&per_page=8&orientation=landscape',
+                js = json.loads(http(f'https://api.pexels.com/videos/search?query={urllib.parse.quote(q)}&per_page=15&orientation=landscape',
                                      headers={'Authorization': key}))
                 for v in js.get('videos', []):
+                    if got >= want: break
                     fs = sorted([x for x in v['video_files'] if x.get('width') and 1280 <= x['width'] <= 1920], key=lambda x: -x['width'])
                     if not fs or v.get('duration', 0) < 4: continue
-                    f = os.path.join(d, 'broll', f'{slug(q)}.mp4'); open(f, 'wb').write(http(fs[0]['link'], timeout=60))
+                    f = os.path.join(d, 'broll', f'{slug(q)}-{got + 1}.mp4')
+                    if not os.path.exists(f): open(f, 'wb').write(http(fs[0]['link'], timeout=90))
                     log_source(d, dict(kind='broll', title=q, url=v.get('url'), credit='Pexels / ' + v.get('user', {}).get('name', ''), file=os.path.relpath(f, d)))
-                    print('->', os.path.relpath(f, d), v.get('duration'), 's  (Pexels:', v.get('user', {}).get('name'), ')'); done = True; break
+                    got += 1; print('->', os.path.relpath(f, d), v.get('duration'), 's  (Pexels:', v.get('user', {}).get('name'), ')')
             except Exception as e:
                 print('pexels failed:', e)
-        if not done:
+        if not got:
             print('no stock video (no PEXELS_API_KEY or nothing found) — saving photos instead')
             sys.argv = sys.argv[:2] + ['images', q, '--n', '2']; main()
+    elif cmd == 'newsclip':
+        # real news-report footage about THIS case / place (YouTube search). Short pieces only + on-screen credit.
+        os.makedirs(os.path.join(d, 'clips'), exist_ok=True)
+        secs = 20; start = 8
+        js = subprocess.run([*tool_cmd('yt-dlp'), '--flat-playlist', '-J', f'ytsearch{max(n, 5)}:{q}'], capture_output=True, text=True).stdout
+        try: ents = json.loads(js).get('entries', [])
+        except ValueError: ents = []
+        got = 0
+        for e in ents:
+            if got >= (n if '--n' in sys.argv else 2): break
+            if not e.get('id') or (e.get('duration') or 0) < 40 or (e.get('duration') or 0) > 1800: continue
+            chn = (e.get('channel') or e.get('uploader') or '')
+            if not NEWS_RX.search(chn) or COURT_RX.search(chn):
+                print(f'   skip (not a news channel): {chn} — {(e.get("title") or "")[:60]}'); continue
+            f = os.path.join(d, 'clips', f'{slug(q)}-{got + 1}.mp4')
+            r = subprocess.run([*tool_cmd('yt-dlp'), '-q', '-f', 'bv*[height<=1080][ext=mp4]+ba/b[height<=1080]', '--merge-output-format', 'mp4',
+                                '--download-sections', f'*{start}-{start + secs}', '--force-keyframes-at-cuts', '-o', f,
+                                f"https://www.youtube.com/watch?v={e['id']}"], capture_output=True, text=True)
+            if r.returncode or not os.path.exists(f): continue
+            jpg = f[:-4] + '.jpg'
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', '5', '-i', f, '-frames:v', '1', '-q:v', '3', jpg])
+            ch = e.get('channel') or e.get('uploader') or ''
+            log_source(d, dict(kind='newsclip', title=e.get('title', ''), url=f"https://www.youtube.com/watch?v={e['id']}", credit=ch, file=os.path.relpath(f, d)))
+            got += 1; print(f'-> {os.path.relpath(f, d)}  [{ch}] {e.get("title", "")[:70]}\n   LOOK: {os.path.relpath(jpg, d)}')
+        print(f'{got} news clips. LOOK at every .jpg — same case / place? Wrong case = delete. Use with caption "SOURCE: <channel>", max ~15 s each.')
     elif cmd == 'frames':
         os.makedirs(os.path.join(d, 'img'), exist_ok=True)
         src = os.path.join(proj_dir(proj), 'src.mp4')

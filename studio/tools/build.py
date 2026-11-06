@@ -14,7 +14,7 @@ The template decides where each camera tile goes (tools/layouts.py), for 1, 2, 3
 """
 import argparse, hashlib, json, os, subprocess, sys, textwrap
 sys.path.insert(0, os.path.dirname(__file__))
-from common import proj_dir, load_json, save_json, dur, load_template, h264_args, FPS, W, H
+from common import target_len, proj_dir, load_json, save_json, dur, load_template, h264_args, FPS, W, H
 from layouts import plan
 
 ap = argparse.ArgumentParser()
@@ -285,6 +285,14 @@ if outro: narration(outro, outro['broll'] + dur(os.path.join(d, 'vo', 'outro.mp3
 
 print(f"template {T['id']}: final length {int(t // 60)}:{int(t % 60):02d}  "
       f"({len(mids)} commentary blocks + hook/outro, {len(skips)} cuts)")
+_hl = S['hearing'][1] - S['hearing'][0]
+_tg = float(S['target_min']) * 60 if S.get('target_min') else target_len(_hl)
+print(f"hearing {int(_hl // 60)} min -> target {int(_tg // 60)} min" + (" (script target_min)" if S.get('target_min') else " (default rule)"))
+if t < _tg * 0.9:
+    print(f"!! TOO SHORT by {int((_tg - t) // 60)} min. Fix: widen/remove 'keep' ranges, fewer 'skip', auto_trim 3-4, "
+          f"and add commentary blocks (one per 2-3 min of hearing). Do NOT ship a {int(t // 60)}-min video for a {int(_hl // 60)}-min hearing.")
+elif t > _tg * 1.25:
+    print(f"!! LONGER than target by {int((t - _tg) // 60)} min — cut dead parts with 'skip' (case numbers, scheduling, silence).")
 if a.dry: sys.exit()
 
 o = base('image', 0, t, 9, 0, 0, W, H)

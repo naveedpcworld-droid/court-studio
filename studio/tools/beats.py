@@ -13,7 +13,8 @@ Beat types (fields in script.json -> vo[].beats[]):
   timeline   {"events": [["Oct 5, 2021", "Arrested for DWI"], ...]}
   charge     {"offense", "law", "penalty"}
   checklist  {"title", "items": [["Sworn statement", true], ["Reason for the stop", false]]}
-  broll      {"file"} (video from research.py broll) or {"image"}                  stock footage
+  broll      {"file", "start", "caption"} video: stock (research.py broll) or news (research.py newsclip) — PLAYS
+             (caption = credit / lower third, e.g. "SOURCE: WXYZ DETROIT"); or {"image"}
 Rendered with PIL frame-by-frame and piped into ffmpeg, so it runs the same on Mac and Windows.
 """
 import math, os, platform, random, subprocess, textwrap
@@ -305,7 +306,17 @@ def render(beat, sk, out, dur, W=1920, H=1080, hl_at=None, assets=None):
         if film: vf += ',noise=alls=12:allf=t'
         if sk.get('letterbox'): vf += f",drawbox=0:0:{W}:{int(H * 0.128)}:black:t=fill,drawbox=0:{H - int(H * 0.128)}:{W}:{int(H * 0.128)}:black:t=fill"
         enc = (['-c:v', 'h264_videotoolbox', '-b:v', '10M'] if platform.system() == 'Darwin' else ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '19'])
-        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-stream_loop', '-1', '-i', beat['file'], '-t', f'{dur:.3f}', '-vf', vf, '-r', str(FPS), '-an', *enc, '-pix_fmt', 'yuv420p', out], check=True)
+        ins = ['-ss', f"{float(beat.get('start', 0)):.2f}", '-stream_loop', '-1', '-i', beat['file']]
+        if beat.get('caption'):                     # credit / lower third ("SOURCE: KSDK NEWS", "DETROIT, MICHIGAN")
+            cap = Image.new('RGBA', (W, H), (0, 0, 0, 0)); dc = ImageDraw.Draw(cap); fb = font(sk.get('font_bold', 'Arial Black'), 34)
+            txt = beat['caption'].upper(); tw = dc.textlength(txt, font=fb)
+            dc.rectangle([50, H - 130, 50 + tw + 50, H - 70], fill=rgb(accent)); dc.text((75, H - 100), txt, font=fb, fill=(255, 255, 255), anchor='lm')
+            cp = out[:-4] + '_cap.png'; cap.save(cp); ins += ['-i', cp]
+            fc = f'[0:v]{vf}[v];[v][1:v]overlay=0:0[o]'
+            cmd = ['ffmpeg', '-v', 'error', '-y', *ins, '-t', f'{dur:.3f}', '-filter_complex', fc, '-map', '[o]']
+        else:
+            cmd = ['ffmpeg', '-v', 'error', '-y', *ins, '-t', f'{dur:.3f}', '-vf', vf]
+        subprocess.run(cmd + ['-r', str(FPS), '-an', *enc, '-pix_fmt', 'yuv420p', out], check=True)
         return
     else:
         # text cards: title / definition / quote / timeline / charge / checklist

@@ -48,13 +48,15 @@ Pehli dafa? Pehle `docs/SETUP.md` ke checks chalao (python3, ffmpeg+libass, yt-d
 
    Student **apna template** maange ("captions neeche", "lal frame", "meri photo background") →
    `tools/new_template.py` (docs/TEMPLATES.md). Built-in T/B kabhi edit mat karo; S01.. banao.
-   Student B template chune to **pehle research karo** — poora tareeqa `docs/RESEARCH-BROLL.md` (HARD rules wahan).
+   Student B template chune to **pehle research karo**, phir **`tools/autobroll.py <name> --news`** (har block ke neeche chalti
+   hui stock footage + news clips + images; `broll_q` har block mein likho — docs/RESEARCH-BROLL.md "Auto B-roll").
+   Sirf cards/images wali B-roll video mat do. — poora tareeqa `docs/RESEARCH-BROLL.md` (HARD rules wahan).
 
    Har template har source sambhalta hai: portrait phone video ya ajeeb size wali camera slot mein
    **blurred fill** ke saath aati hai (kabhi stretch/face-cut nahi).
-3. **Length** — kitni lambi video chahiye? (e.g. 8-10 min · 12-15 min · 18-25 min · "jitna case hai")
+3. **Length** — kitni lambi video chahiye? Default = **hearing ke hisaab se** (1 ghanta → 40+ min, 2 ghante → ~1 ghanta, 20 min → poori). Student number bole to `"target_min"` script.json mein.
 
-Student jawab na de to: 1 camera → **T07**, 2 cameras → **T01**, 3+ → **T06**, length = "jitna case hai".
+Student jawab na de to: 1 camera → **T07**, 2 cameras → **T01**, 3+ → **T06**, length = default rule (upar). **Kabhi khud se 8-10 min mat banao.**
 
 ## 2. Pipeline (sab tum chalao, folder ke root se)
 
@@ -91,12 +93,14 @@ Tum khud best case chuno — student se mat pucho — aur usay **1 line mein bat
 Docket call na mile (sirf 1 case) to `--all`. Ghalat boundary ho to `--range start end` (seconds).
 
 ## 4. Length kaise hit karni hai
-`build.py --dry` final length batata hai. Final ≈ cold open + saari narration + bachi hui hearing.
+`build.py --dry` final length **aur target** batata hai (target = student ki length, warna hearing ke hisaab se:
+1 ghanta → 40+ min, 2 ghante → ~1 ghanta). "!! TOO SHORT" aaye to video mat banao — pehle theek karo.
+Final ≈ cold open + saari narration + bachi hui hearing.
 - **Lambi** aa rahi hai → `script.json` mein `"skip": [[a,b], ...]` daalo (bore hisse: date setting,
   khamoshi, doosre logon ki baatein) ya `"auto_trim": 1.5` (khamoshi zyada kaato).
 - **Chhoti** aa rahi hai → zyada commentary blocks (har ~2 min hearing pe ek) aur thore lambe paragraphs
   (max ~110 words). Hearing jitni hai utni hi rahegi — bharti na karo.
-- ±1 min theek hai.
+- Target se ±10% theek hai. Lambi hearing ko `keep` se 10 min mat banao — `keep` sirf bore hisse hatane ke liye.
 
 ## 4b. Voice (narrator) — student ki marzi
 Default **edge** = FREE (Brian Multilingual, koi key nahi). Behtar/apni awaaz chahiye to `config.env` mein:
